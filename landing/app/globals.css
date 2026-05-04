@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark — matched to vault unlock screen DNA */
+  --bg-base: #0a0e1a;       /* deep night-blue, like sunrise mountain shadow */
+  --bg-soft: #0f1424;       /* one shade up — section divider depth */
+  --text-primary: #f1f5f9;  /* cool white */
+  --text-secondary: rgba(241, 245, 249, 0.72);
+  --text-muted: rgba(241, 245, 249, 0.48);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --accent: #facc15;        /* yellow — same as JSON Editor "Last inn" */
+  --accent-soft: rgba(250, 204, 21, 0.15);
+  --accent-glow: rgba(250, 204, 21, 0.32);
+}
+
+html,
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(250, 204, 21, 0.30);
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hand-drawn signature feel */
+.handwritten {
+  font-family: var(--font-caveat), "Caveat", "Bradley Hand", cursive;
+  font-weight: 500;
+}
+
+/* Hairline divider — yellow dot finesse touch */
+.hairline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.hairline::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
