@@ -26,9 +26,9 @@ export const STRINGS = {
 
     // Problem — tre prinsipper, uten sammenligning
     problemEyebrow: "Tre prinsipper",
-    problemTitle: "Det jeg ikke gir slipp på.",
+    problemTitle: "Dette er hugget i stein!",
     problemSub:
-      "Disse tre står fast. Alt annet kan diskuteres.",
+      "Disse tre står fast. Andre emner kan diskuteres.",
     problemCardTitle1: "Du eier dataene dine",
     problemCardBody1:
       "Ko|Do bruker Upstash i EU. Schrems II-kompatibel. Eksport til JSON eller backup-fil når du vil. Ingen lock-in, ingen kompromisser med data-suvereniteten din.",
@@ -127,9 +127,9 @@ export const STRINGS = {
     heroSignature: "— Michael, February 2026",
 
     problemEyebrow: "Three principles",
-    problemTitle: "What I won't let go of.",
+    problemTitle: "This is set in stone!",
     problemSub:
-      "These three are non-negotiable. Everything else is up for discussion.",
+      "These three stand firm. Other topics are up for discussion.",
     problemCardTitle1: "You own your data",
     problemCardBody1:
       "Ko|Do uses Upstash in the EU. Schrems II-compatible. Export to JSON or backup file whenever. No lock-in, no compromises on your data sovereignty.",
