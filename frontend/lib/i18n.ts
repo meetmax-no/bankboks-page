@@ -34,7 +34,7 @@ export const STRINGS = {
       "All data lagres utelukkende på servere i EU. 100 % Schrems II-kompatibel. Eksporter alt til JSON eller backup-fil når du vil. Ingen lock-in, og absolutt ingen kompromisser med din data-suverenitet.",
     problemCardTitle2: "Zero-knowledge",
     problemCardBody2:
-      "Master-passordet forlater aldri din enhet. Hele vault-en krypteres lokalt med AES-256-GCM. Serveren ser kun krypterte bytes. Selv jeg kan ikke lese dem.",
+      "Master-passordet forlater aldri din enhet. Hele hvelvet krypteres lokalt med AES-256-GCM. Serveren ser utelukkende krypterte bytes. Ingen bakdører. Ingen systemtilgang for noen.",
     problemCardTitle3: "100% eller null",
     problemCardBody3:
       "Hvis en funksjon kun er 95% sikker, lager jeg den ikke. Ingen \"husk meg i 30 dager\". Ingen recovery-spørsmål. Ingen passord-hint. Ingen falsk trygghet.",
@@ -135,7 +135,7 @@ export const STRINGS = {
       "All data is stored exclusively on servers in the EU. 100% Schrems II-compatible. Export everything to JSON or backup file whenever you want. No lock-in, and absolutely no compromises on your data sovereignty.",
     problemCardTitle2: "Zero-knowledge",
     problemCardBody2:
-      "Your master password never leaves your device. The entire vault is encrypted locally with AES-256-GCM. The server only sees encrypted bytes. Even I can't read them.",
+      "Your master password never leaves your device. The entire vault is encrypted locally with AES-256-GCM. The server sees only encrypted bytes. No backdoors. No system access for anyone.",
     problemCardTitle3: "100% or nothing",
     problemCardBody3:
       "If a feature is only 95% secure, I don't build it. No \"remember me for 30 days\". No recovery questions. No password hints. No false security.",
