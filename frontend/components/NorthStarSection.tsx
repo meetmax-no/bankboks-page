@@ -32,25 +32,37 @@ export function NorthStarSection({ locale }: NorthStarSectionProps) {
             data-testid="northstar-quote"
             className="relative text-2xl sm:text-4xl lg:text-5xl font-light leading-[1.3] tracking-tight text-white pl-2 sm:pl-8"
           >
-            Spørsmålet er om det skal være{" "}
+            {s.northQuote.split(/(100\s?%|95\s?%)/g).map((part, i) => {
+              if (/^100\s?%$/.test(part)) {
+                return (
+                  <span
+                    key={i}
+                    className="font-semibold"
+                    style={{ color: "var(--accent)" }}
+                  >
+                    {part}
+                  </span>
+                );
+              }
+              if (/^95\s?%$/.test(part)) {
+                return (
+                  <span
+                    key={i}
+                    className="text-white/30 line-through decoration-2 decoration-white/40"
+                  >
+                    {part}
+                  </span>
+                );
+              }
+              return <span key={i}>{part}</span>;
+            })}
             <span
-              className="font-semibold"
-              style={{ color: "var(--accent)" }}
+              aria-hidden
+              className="ml-1 font-serif"
+              style={{ color: "var(--accent)", opacity: 0.55 }}
             >
-              100%
-            </span>{" "}
-            eller{" "}
-            <span className="text-white/30 line-through decoration-2 decoration-white/40">
-              95%
-            </span>{" "}
-            — og svaret er{" "}
-            <span
-              className="font-semibold"
-              style={{ color: "var(--accent)" }}
-            >
-              100%
+              &rdquo;
             </span>
-            , ellers synker vi en eller annen dag, du vet bare ikke når.
           </blockquote>
         </div>
 
