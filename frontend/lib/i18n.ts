@@ -31,7 +31,7 @@ export const STRINGS = {
       "Disse tre står fast. Annet kan videreutvikles.",
     problemCardTitle1: "Du eier dataene dine",
     problemCardBody1:
-      "Ko|Do bruker Upstash i EU. Schrems II-kompatibel. Eksport til JSON eller backup-fil når du vil. Ingen lock-in, ingen kompromisser med data-suvereniteten din.",
+      "All data lagres utelukkende på servere i EU. 100 % Schrems II-kompatibel. Eksporter alt til JSON eller backup-fil når du vil. Ingen lock-in, og absolutt ingen kompromisser med din data-suverenitet.",
     problemCardTitle2: "Zero-knowledge",
     problemCardBody2:
       "Master-passordet forlater aldri din enhet. Hele vault-en krypteres lokalt med AES-256-GCM. Serveren ser kun krypterte bytes. Selv jeg kan ikke lese dem.",
@@ -132,7 +132,7 @@ export const STRINGS = {
       "These three stand firm. The rest can evolve.",
     problemCardTitle1: "You own your data",
     problemCardBody1:
-      "Ko|Do uses Upstash in the EU. Schrems II-compatible. Export to JSON or backup file whenever. No lock-in, no compromises on your data sovereignty.",
+      "All data is stored exclusively on servers in the EU. 100% Schrems II-compatible. Export everything to JSON or backup file whenever you want. No lock-in, and absolutely no compromises on your data sovereignty.",
     problemCardTitle2: "Zero-knowledge",
     problemCardBody2:
       "Your master password never leaves your device. The entire vault is encrypted locally with AES-256-GCM. The server only sees encrypted bytes. Even I can't read them.",
