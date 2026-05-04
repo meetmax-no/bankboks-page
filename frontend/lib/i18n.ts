@@ -37,7 +37,7 @@ export const STRINGS = {
       "Master-passordet forlater aldri din enhet. Hele hvelvet krypteres lokalt med AES-256-GCM. Serveren ser utelukkende krypterte bytes. Ingen bakdører. Ingen systemtilgang for noen.",
     problemCardTitle3: "100% eller null",
     problemCardBody3:
-      "Hvis en funksjon kun er 95% sikker, lager jeg den ikke. Ingen \"husk meg i 30 dager\". Ingen recovery-spørsmål. Ingen passord-hint. Ingen falsk trygghet.",
+      "Hvis en funksjon kun er 95% sikker, bygger vi den ikke. Ingen \"husk meg i 30 dager\". Ingen recovery-spørsmål. Ingen passord-hint. Ingen falsk trygghet.",
 
     // Architecture
     archEyebrow: "Hvordan det funker",
@@ -138,7 +138,7 @@ export const STRINGS = {
       "Your master password never leaves your device. The entire vault is encrypted locally with AES-256-GCM. The server sees only encrypted bytes. No backdoors. No system access for anyone.",
     problemCardTitle3: "100% or nothing",
     problemCardBody3:
-      "If a feature is only 95% secure, I don't build it. No \"remember me for 30 days\". No recovery questions. No password hints. No false security.",
+      "If a feature is only 95% secure, we don't build it. No \"remember me for 30 days\". No recovery questions. No password hints. No false security.",
 
     archEyebrow: "How it works",
     archTitle: "Hybrid architecture. Pure cryptography.",
