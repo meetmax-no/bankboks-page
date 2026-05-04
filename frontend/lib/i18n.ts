@@ -54,7 +54,7 @@ export const STRINGS = {
       "Spørsmålet er om det skal være 100% eller 95% — og svaret er 100%, ellers synker vi en eller annen dag, du vet bare ikke når.",
     northAuthor: "Michael Aagreen, februar 2026",
     northBody:
-      "Hver beslutning testes mot dette: Er sikkerheten matematisk garantert, eller stoler vi på at noen oppfører seg pent? Hvis det er i tvil — bygger jeg det ikke.",
+      "Hver beslutning testes mot dette: Er sikkerheten matematisk garantert, eller stoler vi på at noen oppfører seg pent? Hvis det er tvil — bygges det ikke.",
 
     // Roadmap
     roadmapEyebrow: "Hva som kommer",
@@ -153,7 +153,7 @@ export const STRINGS = {
       "The question is whether it should be 100% or 95% — and the answer is 100%, otherwise we sink one day, you just don't know when.",
     northAuthor: "Michael Aagreen, February 2026",
     northBody:
-      "Every decision is tested against this: Is the security mathematically guaranteed, or are we trusting that someone behaves nicely? If in doubt — I don't build it.",
+      "Every decision is tested against this: Is the security mathematically guaranteed, or are we trusting that someone behaves nicely? If in doubt — it won't be built.",
 
     roadmapEyebrow: "What's coming",
     roadmapTitle: "A plan I stick to.",
