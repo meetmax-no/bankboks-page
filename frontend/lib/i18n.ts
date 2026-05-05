@@ -104,8 +104,8 @@ export const STRINGS = {
 
     // Footer
     footerLine1: "Ko|Do · Vault",
-    footerLine2: "By Ko|Do Consult · Michael Aagreen",
-    footerLine3: "Bygget i Norge · Drevet av Upstash i EU",
+    footerLine2: "Arkitektur av Michael Aagreen",
+    footerLine3: "Bygget i Norge · Drevet av Upstash i EU · Hosted i EU",
     footerStatus: "Kommer snart",
 
     // Misc
@@ -199,8 +199,8 @@ export const STRINGS = {
     emailSignTitle: "Ko|Do Consult",
 
     footerLine1: "Ko|Do · Vault",
-    footerLine2: "By Ko|Do Consult · Michael Aagreen",
-    footerLine3: "Built in Norway · Powered by Upstash in the EU",
+    footerLine2: "Architecture by Michael Aagreen",
+    footerLine3: "Built in Norway · Powered by Upstash in the EU · Hosted in the EU",
     footerStatus: "Coming soon",
 
     skipToContent: "Skip to content",
