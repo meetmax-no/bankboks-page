@@ -70,9 +70,9 @@ export const STRINGS = {
     v4_0Title: "Sikker overlevering",
     v4_0Body:
       "Engangspakker (.kodoenc). Krypter dokumenter for én spesifikk mottaker. Null server-involvering. Nøyaktig den samme sikkerheten som PGP, strippet for all friksjon.",
-    v4_5Title: "v4.5 — Dokument-laget",
+    v4_5Title: "Dokument-laget",
     v4_5Body:
-      "BYO Google Drive. Virtuell sikker disk for notater, PDF-er, Word-dokumenter. Mountes med master-passord, demonteres ved auto-lås.",
+      "Bring Your Own Storage (BYO). Google Drive, Dropbox eller en lokal USB. En virtuell, sikker disk for notater, PDF-er og dokumenter. Mountes med master-passordet, demonteres umiddelbart ved auto-lås.",
 
     // Waitlist
     waitlistEyebrow: "Bli den første som får vite",
@@ -168,9 +168,9 @@ export const STRINGS = {
     v4_0Title: "Secure handoff",
     v4_0Body:
       "One-time packages (.kodoenc). Encrypt documents for one specific recipient. Zero server involvement. The exact same security as PGP, stripped of all friction.",
-    v4_5Title: "v4.5 — Document layer",
+    v4_5Title: "Document layer",
     v4_5Body:
-      "BYO Google Drive. Virtual secure disk for notes, PDFs, Word documents. Mounted with master password, dismounted on auto-lock.",
+      "Bring Your Own Storage (BYO). Google Drive, Dropbox, or a local USB. A virtual, secure disk for notes, PDFs and documents. Mounted with the master password, dismounted instantly on auto-lock.",
 
     waitlistEyebrow: "Be the first to know",
     waitlistTitle: "Send me an email.",
