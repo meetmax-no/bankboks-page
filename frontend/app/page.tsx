@@ -93,7 +93,7 @@ export default function LandingPage() {
             aria-label="Ko|Do · Vault"
           >
             <h1 className="text-2xl sm:text-3xl font-light tracking-tight drop-shadow-lg leading-none truncate">
-              <span className="text-white/85 group-hover:text-white transition">Ko|Do</span>
+              <span className="text-white/85 group-hover:text-white transition">Ko | Do</span>
               <span className="mx-1.5 sm:mx-2 text-white/50">·</span>
               <span className="font-semibold text-white">Vault</span>
             </h1>
