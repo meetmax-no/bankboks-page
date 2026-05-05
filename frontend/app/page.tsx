@@ -89,16 +89,14 @@ export default function LandingPage() {
           <a
             href="#"
             data-testid="brand-logo"
-            className="flex items-baseline gap-2 group"
-            aria-label="Ko | Do · Vault"
+            className="group"
+            aria-label="Ko|Do · Vault"
           >
-            <span className="text-base sm:text-lg font-light text-white/80 group-hover:text-white transition tracking-tight">
-              Ko <span className="text-white/35">|</span> Do
-            </span>
-            <span className="text-white/35 text-base sm:text-lg">·</span>
-            <span className="text-base sm:text-lg font-semibold text-white tracking-tight">
-              Vault
-            </span>
+            <h1 className="text-2xl sm:text-3xl font-light tracking-tight drop-shadow-lg leading-none truncate">
+              <span className="text-white/85 group-hover:text-white transition">Ko|Do</span>
+              <span className="mx-1.5 sm:mx-2 text-white/50">·</span>
+              <span className="font-semibold text-white">Vault</span>
+            </h1>
           </a>
 
           <LanguageToggle locale={locale} onChange={setLocale} />
