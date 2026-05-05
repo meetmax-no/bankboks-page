@@ -2,12 +2,11 @@
   "name": "kodovault-landing",
   "version": "0.1.0",
   "private": true,
-  "description": "Ko|Do · Vault — One-pager landing m/ Resend waitlist (kodovault.no)",
+  "description": "Ko | Do · Vault — One-pager landing m/ Resend waitlist (kodovault.no)",
   "scripts": {
     "dev": "next dev -H 0.0.0.0 -p 3000",
     "build": "next build",
-    "start": "next dev -H 0.0.0.0 -p 3000",
-    "start:prod": "next start -H 0.0.0.0 -p 3000",
+    "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "next lint"
   },
   "dependencies": {
