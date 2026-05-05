@@ -98,7 +98,7 @@ export const STRINGS = {
       "Ko | Do · Vault bygges fra grunnen av med ett prinsipp: 100% eller null. Lean Security · Not Security as a Service.",
     emailBody3:
       "Har du spørsmål? Bare svar på denne mailen — den går rett til meg.",
-    emailSign: "Mvh,",
+    emailSign: "Ha en strålende dag videre,",
     emailSignName: "Michael Aagreen",
     emailSignTitle: "Ko | Do Consult",
 
@@ -194,7 +194,7 @@ export const STRINGS = {
       "Ko | Do · Vault is built from the ground up on one principle: 100% or nothing. Lean Security · Not Security as a Service.",
     emailBody3:
       "Got questions? Just reply to this email — it goes straight to me.",
-    emailSign: "Best,",
+    emailSign: "Have a brilliant day,",
     emailSignName: "Michael Aagreen",
     emailSignTitle: "Ko | Do Consult",
 

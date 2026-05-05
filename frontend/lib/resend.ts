@@ -69,7 +69,7 @@ export function buildWelcomeEmailHtml(locale: Locale): string {
                   <p style="font-size:14px;line-height:1.5;color:#94a3b8;margin:0;">
                     ${s.emailSign}
                   </p>
-                  <p style="font-size:15px;font-weight:600;color:#ffffff;margin:4px 0 0 0;">
+                  <p style="font-size:15px;font-weight:600;color:#ffffff;margin:14px 0 0 0;">
                     ${s.emailSignName}
                   </p>
                   <p style="font-size:13px;color:#64748b;margin:2px 0 0 0;">
