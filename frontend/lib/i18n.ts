@@ -64,9 +64,9 @@ export const STRINGS = {
     v3_0Title: "Bankkort og virtuelle kort.",
     v3_0Body:
       "Egen kryptert arkitektur for alle typer betalingskort. Inkluderer en fullstendig isolert kamerafunksjon for skanning — bildet går rett i hvelvet, og berører aldri telefonens bildegalleri eller iCloud.",
-    v3_1Title: "v3.1 — 2FA TOTP integrert",
+    v3_1Title: "2FA TOTP integrert",
     v3_1Body:
-      "Lev koder direkte i passord-oppføringen. Bytter telefon? Alt fungerer automatisk via den krypterte blob-en.",
+      "Tidsbaserte engangskoder genereres direkte i hvelvet. Ved tap eller bytte av enhet, er alle kodene dine umiddelbart tilgjengelige via din master-nøkkel. Ingen separat authenticator-app kreves.",
     v4_0Title: "v4.0 — Sikker overlevering",
     v4_0Body:
       "Engangs-pakker (.kodoenc). Krypter dokumenter til én mottaker. Ingen Ko|Do-server involvert. Akkurat som PGP, men brukervennlig.",
@@ -162,9 +162,9 @@ export const STRINGS = {
     v3_0Title: "Debit and virtual cards.",
     v3_0Body:
       "Dedicated encrypted architecture for all types of payment cards. Includes a fully isolated camera function for scanning — the image goes straight to the vault, never touching the phone's photo gallery or iCloud.",
-    v3_1Title: "v3.1 — 2FA TOTP integrated",
+    v3_1Title: "2FA TOTP integrated",
     v3_1Body:
-      "Live codes directly in the password entry. Switching phones? Everything works automatically via the encrypted blob.",
+      "Time-based one-time codes generated directly in the vault. If you lose or switch devices, all your codes are instantly available via your master key. No separate authenticator app required.",
     v4_0Title: "v4.0 — Secure handoff",
     v4_0Body:
       "One-time packages (.kodoenc). Encrypt documents to a single recipient. No Ko|Do server involved. Just like PGP, but user-friendly.",
