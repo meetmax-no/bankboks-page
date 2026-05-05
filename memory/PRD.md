@@ -68,9 +68,16 @@ One-pager landingside som samler waitlist-emails via Resend. Helt isolert fra va
 - [ ] Mail-boks `noreply@kodovault.no` (30 kr/mnd via registrar) for å kunne svare på evt. replies i Ko | Do-brand
 
 ## Status
-- ✅ v1.0 landingsside deployet til Vercel (initial deploy 5. mai 2026)
-- ✅ Favicon på plass (gul KV-sirkel, favicon.io-eksport)
-- ✅ NO + EN tekstene synkronisert, brand-konsistens «Ko | Do · Vault» overalt
-- ⏳ Env-vars må settes i Vercel før waitlist fungerer på ordentlig
-- ⏳ Domene-kjøp + DNS-oppsett
-- ⏳ Resend-domene-verifisering
+- ✅ **v1.0 LIVE** på https://www.kodovault.no (5. mai 2026)
+- ✅ Vercel Pro deploy fra `meetmax-no/bankboks-page` → `frontend/`
+- ✅ Custom domain `kodovault.no` + `www.kodovault.no` med auto-SSL
+- ✅ Resend domene verifisert, sender fra `noreply@kodovault.no`
+- ✅ Waitlist end-to-end testet: form → Audience + velkomstmail levert
+- ✅ Favicon (gul KV-sirkel), NO/EN tekst-paritet, brand `Ko | Do · Vault` overalt
+- ✅ Vercel Analytics + Speed Insights aktive
+
+## Backlog / fremtidige iterasjoner
+- Bytte mail-klient-plan hvis innboks-volum krever det (30 kr/mnd forwarding eller full IMAP)
+- Blog/docs-side under samme domene når produkt nærmer seg release
+- Utvide landing med «v3.0 er klar»-CTA når vault er produksjonsklar
+- Evt. A/B-teste hero-copy basert på Analytics-data (conversion-rate per trafikk-kilde)
