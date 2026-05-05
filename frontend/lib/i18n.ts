@@ -103,7 +103,7 @@ export const STRINGS = {
     emailSignTitle: "Ko|Do Consult",
 
     // Footer
-    footerLine1: "Ko|Do · Vault",
+    footerLine1: "Ko | Do · Vault",
     footerLine2: "Arkitektur av Michael Aagreen",
     footerLine3: "Bygget i Norge · Drevet av Upstash i EU · Hosted i EU",
     footerStatus: "Kommer snart",
@@ -198,7 +198,7 @@ export const STRINGS = {
     emailSignName: "Michael Aagreen",
     emailSignTitle: "Ko|Do Consult",
 
-    footerLine1: "Ko|Do · Vault",
+    footerLine1: "Ko | Do · Vault",
     footerLine2: "Architecture by Michael Aagreen",
     footerLine3: "Built in Norway · Powered by Upstash in the EU · Hosted in the EU",
     footerStatus: "Coming soon",
