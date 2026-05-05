@@ -22,7 +22,7 @@ export function getResendClient(): Resend {
 
 export function getResendConfig() {
   const fromEmail = getEnv("RESEND_FROM_EMAIL");
-  const fromName = process.env.RESEND_FROM_NAME ?? "Ko|Do · Vault";
+  const fromName = process.env.RESEND_FROM_NAME ?? "Ko | Do · Vault";
   return {
     audienceId: getEnv("RESEND_AUDIENCE_ID"),
     from: `${fromName} <${fromEmail}>`,
@@ -51,7 +51,7 @@ export function buildWelcomeEmailHtml(locale: Locale): string {
             <tr>
               <td style="padding:40px 40px 24px 40px;">
                 <div style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#f59e0b;margin-bottom:20px;">
-                  Ko|Do &middot; Vault
+                  Ko | Do &middot; Vault
                 </div>
                 <h1 style="font-size:28px;font-weight:300;line-height:1.2;color:#ffffff;margin:0 0 24px 0;letter-spacing:-0.02em;">
                   ${s.emailGreeting}
@@ -82,7 +82,7 @@ export function buildWelcomeEmailHtml(locale: Locale): string {
               <td style="padding:0 40px 40px 40px;">
                 <div style="border-top:1px solid rgba(255,255,255,0.05);padding-top:20px;">
                   <p style="font-size:11px;line-height:1.5;color:#475569;margin:0;text-align:center;">
-                    Ko|Do &middot; Vault &middot; <a href="https://kodovault.no" style="color:#64748b;text-decoration:none;">kodovault.no</a>
+                    Ko | Do &middot; Vault &middot; <a href="https://kodovault.no" style="color:#64748b;text-decoration:none;">kodovault.no</a>
                   </p>
                 </div>
               </td>
@@ -111,6 +111,6 @@ export function buildWelcomeEmailText(locale: Locale): string {
     s.emailSignTitle,
     "",
     "—",
-    "Ko|Do · Vault · https://kodovault.no",
+    "Ko | Do · Vault · https://kodovault.no",
   ].join("\n");
 }

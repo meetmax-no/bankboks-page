@@ -16,14 +16,14 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kodovault.no"),
-  title: "Ko|Do · Vault — Lean Security",
+  title: "Ko | Do · Vault — Lean Security",
   description:
     "En personlig passord-vault. Lean Security · Not Security as a Service. Bli med på lista.",
   openGraph: {
-    title: "Ko|Do · Vault — Lean Security",
+    title: "Ko | Do · Vault — Lean Security",
     description: "En personlig passord-vault. Lean Security · Not Security as a Service.",
     url: "https://kodovault.no",
-    siteName: "Ko|Do · Vault",
+    siteName: "Ko | Do · Vault",
     locale: "nb_NO",
     type: "website",
   },

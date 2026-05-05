@@ -90,7 +90,7 @@ export default function LandingPage() {
             href="#"
             data-testid="brand-logo"
             className="group"
-            aria-label="Ko|Do · Vault"
+            aria-label="Ko | Do · Vault"
           >
             <h1 className="text-2xl sm:text-3xl font-light tracking-tight drop-shadow-lg leading-none truncate">
               <span className="text-white/85 group-hover:text-white transition">Ko | Do</span>

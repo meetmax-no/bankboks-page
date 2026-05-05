@@ -3,7 +3,7 @@
  *
  * Bærende bjelke: "Lean Security · Not Security as a Service"
  * Stemmen er PERSONLIG (1. person) men HUMBLE — vi sammenligner aldri
- * med andre, vi snakker bare om hva Ko|Do ER.
+ * med andre, vi snakker bare om hva Ko | Do ER.
  */
 
 export type Locale = "nb" | "en";
@@ -44,7 +44,7 @@ export const STRINGS = {
     archTitle: "Hybrid arkitektur. Ren kryptografi.",
     archBody:
       "Master-passordet stretches gjennom 600 000 PBKDF2-iterasjoner og brukes til å kryptere hele vault-arrayet som ÉN binær blob. Upstash Redis lagrer kun {salt, iv, cipher}. WebAuthn PRF wrapper master-passordet lokalt for Touch/Face ID-innlogging.",
-    archImageAlt: "Ko|Do Vault arkitektur — hybrid mellom ren klient-side og minimal server",
+    archImageAlt: "Ko | Do Vault arkitektur — hybrid mellom ren klient-side og minimal server",
     archCaption:
       "Vault-data finnes kun i én form på serveren: kryptert. Ingen hos oss kan lese den. Vercel kan ikke lese den. Upstash kan ikke lese den. Uten din nøkkel er dataene verdiløse.",
 
@@ -90,17 +90,17 @@ export const STRINGS = {
       "E-postadressen brukes utelukkende til dette ene varselet. Absolutt ingen tredjeparts-deling.",
 
     // Welcome email
-    emailSubject: "Velkommen på Ko|Do · Vault-lista",
+    emailSubject: "Velkommen på Ko | Do · Vault-lista",
     emailGreeting: "Takk!",
     emailBody1:
       "Du er på lista. Jeg sier fra når v3.0 er klar — sannsynligvis i løpet av våren 2026.",
     emailBody2:
-      "Ko|Do · Vault bygges fra grunnen av med ett prinsipp: 100% eller null. Lean Security · Not Security as a Service.",
+      "Ko | Do · Vault bygges fra grunnen av med ett prinsipp: 100% eller null. Lean Security · Not Security as a Service.",
     emailBody3:
       "Har du spørsmål? Bare svar på denne mailen — den går rett til meg.",
     emailSign: "Mvh,",
     emailSignName: "Michael Aagreen",
-    emailSignTitle: "Ko|Do Consult",
+    emailSignTitle: "Ko | Do Consult",
 
     // Footer
     footerLine1: "Ko | Do · Vault",
@@ -144,7 +144,7 @@ export const STRINGS = {
     archTitle: "Hybrid architecture. Pure cryptography.",
     archBody:
       "Your master password is stretched through 600,000 PBKDF2 iterations and used to encrypt the entire vault array as a single binary blob. Upstash Redis stores only {salt, iv, cipher}. WebAuthn PRF wraps the master password locally for Touch/Face ID login.",
-    archImageAlt: "Ko|Do Vault architecture — hybrid between pure client-side and minimal server",
+    archImageAlt: "Ko | Do Vault architecture — hybrid between pure client-side and minimal server",
     archCaption:
       "Vault data exists in only one form on the server: encrypted. No one on our side can read it. Vercel can't read it. Upstash can't read it. Without your key, the data is worthless.",
 
@@ -186,17 +186,17 @@ export const STRINGS = {
     waitlistConsent:
       "Your email address is used solely for this single notification. Absolutely no third-party sharing.",
 
-    emailSubject: "Welcome to the Ko|Do · Vault list",
+    emailSubject: "Welcome to the Ko | Do · Vault list",
     emailGreeting: "Thank you!",
     emailBody1:
       "You're on the list. I'll let you know when v3.0 ships — likely during spring 2026.",
     emailBody2:
-      "Ko|Do · Vault is built from the ground up on one principle: 100% or nothing. Lean Security · Not Security as a Service.",
+      "Ko | Do · Vault is built from the ground up on one principle: 100% or nothing. Lean Security · Not Security as a Service.",
     emailBody3:
       "Got questions? Just reply to this email — it goes straight to me.",
     emailSign: "Best,",
     emailSignName: "Michael Aagreen",
-    emailSignTitle: "Ko|Do Consult",
+    emailSignTitle: "Ko | Do Consult",
 
     footerLine1: "Ko | Do · Vault",
     footerLine2: "Architecture by Michael Aagreen",
