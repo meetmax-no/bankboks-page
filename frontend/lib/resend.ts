@@ -50,7 +50,7 @@ export function buildWelcomeEmailHtml(locale: Locale): string {
           <table role="presentation" width="560" cellspacing="0" cellpadding="0" border="0" style="max-width:560px;width:100%;background:linear-gradient(180deg,rgba(255,255,255,0.04) 0%,rgba(255,255,255,0.02) 100%);border:1px solid rgba(255,255,255,0.08);border-radius:16px;">
             <tr>
               <td style="padding:40px 40px 24px 40px;">
-                <div style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#f59e0b;margin-bottom:20px;">
+                <div style="font-size:13px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#facc15;margin-bottom:20px;">
                   Ko | Do &middot; Vault
                 </div>
                 <h1 style="font-size:28px;font-weight:300;line-height:1.2;color:#ffffff;margin:0 0 24px 0;letter-spacing:-0.02em;">
@@ -82,7 +82,7 @@ export function buildWelcomeEmailHtml(locale: Locale): string {
               <td style="padding:0 40px 40px 40px;">
                 <div style="border-top:1px solid rgba(255,255,255,0.05);padding-top:20px;">
                   <p style="font-size:11px;line-height:1.5;color:#475569;margin:0;text-align:center;">
-                    Ko | Do &middot; Vault &middot; <a href="https://kodovault.no" style="color:#64748b;text-decoration:none;">kodovault.no</a>
+                    Ko | Do &middot; Vault &middot; <a href="https://kodovault.no" style="color:#facc15;text-decoration:none;">kodovault.no</a>
                   </p>
                 </div>
               </td>

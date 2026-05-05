@@ -100,7 +100,7 @@ export const STRINGS = {
       "Har du spørsmål? Bare svar på denne mailen — den går rett til meg.",
     emailSign: "Ha en strålende dag videre,",
     emailSignName: "Michael Aagreen",
-    emailSignTitle: "Ko | Do Consult",
+    emailSignTitle: "Ko | Do Vault",
 
     // Footer
     footerLine1: "Ko | Do · Vault",
@@ -196,7 +196,7 @@ export const STRINGS = {
       "Got questions? Just reply to this email — it goes straight to me.",
     emailSign: "Have a brilliant day,",
     emailSignName: "Michael Aagreen",
-    emailSignTitle: "Ko | Do Consult",
+    emailSignTitle: "Ko | Do Vault",
 
     footerLine1: "Ko | Do · Vault",
     footerLine2: "Architecture by Michael Aagreen",
