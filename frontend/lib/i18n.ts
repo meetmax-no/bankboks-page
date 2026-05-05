@@ -67,9 +67,9 @@ export const STRINGS = {
     v3_1Title: "2FA TOTP integrert",
     v3_1Body:
       "Tidsbaserte engangskoder genereres direkte i hvelvet. Ved tap eller bytte av enhet, er alle kodene dine umiddelbart tilgjengelige via din master-nøkkel. Ingen separat authenticator-app kreves.",
-    v4_0Title: "v4.0 — Sikker overlevering",
+    v4_0Title: "Sikker overlevering",
     v4_0Body:
-      "Engangs-pakker (.kodoenc). Krypter dokumenter til én mottaker. Ingen Ko|Do-server involvert. Akkurat som PGP, men brukervennlig.",
+      "Engangspakker (.kodoenc). Krypter dokumenter for én spesifikk mottaker. Null server-involvering. Nøyaktig den samme sikkerheten som PGP, strippet for all friksjon.",
     v4_5Title: "v4.5 — Dokument-laget",
     v4_5Body:
       "BYO Google Drive. Virtuell sikker disk for notater, PDF-er, Word-dokumenter. Mountes med master-passord, demonteres ved auto-lås.",
@@ -165,9 +165,9 @@ export const STRINGS = {
     v3_1Title: "2FA TOTP integrated",
     v3_1Body:
       "Time-based one-time codes generated directly in the vault. If you lose or switch devices, all your codes are instantly available via your master key. No separate authenticator app required.",
-    v4_0Title: "v4.0 — Secure handoff",
+    v4_0Title: "Secure handoff",
     v4_0Body:
-      "One-time packages (.kodoenc). Encrypt documents to a single recipient. No Ko|Do server involved. Just like PGP, but user-friendly.",
+      "One-time packages (.kodoenc). Encrypt documents for one specific recipient. Zero server involvement. The exact same security as PGP, stripped of all friction.",
     v4_5Title: "v4.5 — Document layer",
     v4_5Body:
       "BYO Google Drive. Virtual secure disk for notes, PDFs, Word documents. Mounted with master password, dismounted on auto-lock.",
