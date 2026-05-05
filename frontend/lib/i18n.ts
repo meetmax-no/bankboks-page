@@ -61,9 +61,9 @@ export const STRINGS = {
     roadmapTitle: "Vårt rammeverk og planner for utviklingen videre",
     roadmapSub:
       "Versjon for versjon. Hver release skal være 100% før den slippes — derfor varierer datoer.",
-    v3_0Title: "v3.0 — Bankkort & virtuelle kort",
+    v3_0Title: "v3.0 — Bankkort, Kredittkort & virtuelle kort",
     v3_0Body:
-      "Egen kryptert blob for kort. Custom kamera-fangst — fotoet havner ALDRI i Camera Roll eller iCloud Photos.",
+      "Egen kryptert funksjon for alle typer kort. Tilbud om Custom kamera-fangst — fotoet havner ALDRI i Camera Roll eller iCloud Photos.",
     v3_1Title: "v3.1 — 2FA TOTP integrert",
     v3_1Body:
       "Lev koder direkte i passord-oppføringen. Bytter telefon? Alt fungerer automatisk via den krypterte blob-en.",
@@ -159,9 +159,9 @@ export const STRINGS = {
     roadmapTitle: "Our framework and plans for further development",
     roadmapSub:
       "Version by version. Each release must be 100% before shipping — that's why dates vary.",
-    v3_0Title: "v3.0 — Cards & virtual cards",
+    v3_0Title: "v3.0 — Debit, Credit & virtual cards",
     v3_0Body:
-      "Separate encrypted blob for cards. Custom camera capture — your photo NEVER ends up in Camera Roll or iCloud Photos.",
+      "Separate encrypted feature for all card types. Optional custom camera capture — your photo NEVER ends up in Camera Roll or iCloud Photos.",
     v3_1Title: "v3.1 — 2FA TOTP integrated",
     v3_1Body:
       "Live codes directly in the password entry. Switching phones? Everything works automatically via the encrypted blob.",
