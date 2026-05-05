@@ -58,7 +58,7 @@ export const STRINGS = {
 
     // Roadmap
     roadmapEyebrow: "Hva som kommer",
-    roadmapTitle: "En plan jeg holder meg til.",
+    roadmapTitle: "Vårt rammeverk og planner for utviklingen videre",
     roadmapSub:
       "Versjon for versjon. Hver release skal være 100% før den slippes — derfor varierer datoer.",
     v3_0Title: "v3.0 — Bankkort & virtuelle kort",
@@ -156,7 +156,7 @@ export const STRINGS = {
       "Every decision is tested against this: Is the security mathematically guaranteed, or are we trusting that someone behaves nicely? If in doubt — it won't be built.",
 
     roadmapEyebrow: "What's coming",
-    roadmapTitle: "A plan I stick to.",
+    roadmapTitle: "Our framework and plans for further development",
     roadmapSub:
       "Version by version. Each release must be 100% before shipping — that's why dates vary.",
     v3_0Title: "v3.0 — Cards & virtual cards",
