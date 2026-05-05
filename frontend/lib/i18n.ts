@@ -58,9 +58,9 @@ export const STRINGS = {
 
     // Roadmap
     roadmapEyebrow: "Hva som kommer",
-    roadmapTitle: "Vårt rammeverk og planner for utviklingen videre",
+    roadmapTitle: "Arkitektonisk veikart.",
     roadmapSub:
-      "Versjon for versjon. Hver release skal være 100% før den slippes — derfor varierer datoer.",
+      "Versjon for versjon. Ingenting slippes før det er 100 % fullført. Tidsfrister viker alltid for sikkerhet.",
     v3_0Title: "v3.0 — Bankkort, Kredittkort & virtuelle kort",
     v3_0Body:
       "Egen kryptert funksjon for alle typer kort. Tilbud om Custom kamera-fangst — fotoet havner ALDRI i Camera Roll eller iCloud Photos.",
@@ -156,9 +156,9 @@ export const STRINGS = {
       "Every decision is tested against this: Is the security mathematically guaranteed, or are we trusting that someone behaves nicely? If in doubt — it won't be built.",
 
     roadmapEyebrow: "What's coming",
-    roadmapTitle: "Our framework and plans for further development",
+    roadmapTitle: "Architectural roadmap.",
     roadmapSub:
-      "Version by version. Each release must be 100% before shipping — that's why dates vary.",
+      "Version by version. Nothing ships until it's 100% complete. Deadlines always yield to security.",
     v3_0Title: "v3.0 — Debit, Credit & virtual cards",
     v3_0Body:
       "Separate encrypted feature for all card types. Optional custom camera capture — your photo NEVER ends up in Camera Roll or iCloud Photos.",
