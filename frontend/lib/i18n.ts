@@ -78,7 +78,7 @@ export const STRINGS = {
     waitlistEyebrow: "Bli den første som får vite",
     waitlistTitle: "Send meg én mail.",
     waitlistSub:
-      "Jeg sender én mail når v3.0 er klar. Ingen nyhetsbrev. Ingen markedsføring. Du kan melde deg av når som helst.",
+      "Du mottar nøyaktig én e-post den dagen v3.0 er operativ. Ingen nyhetsbrev. Ingen markedsføring. Ingen oppfølging.",
     waitlistEmailPlaceholder: "din@epost.no",
     waitlistButton: "Meld meg på",
     waitlistButtonLoading: "Sender...",
@@ -87,7 +87,7 @@ export const STRINGS = {
     waitlistInvalidEmail: "Ugyldig e-postadresse",
     waitlistAlready: "Du står allerede på lista. Takk!",
     waitlistConsent:
-      "Ved å melde deg på godtar du at jeg kontakter deg om Ko|Do · Vault. Ingen tredjeparts-deling.",
+      "E-postadressen brukes utelukkende til dette ene varselet. Absolutt ingen tredjeparts-deling.",
 
     // Welcome email
     emailSubject: "Velkommen på Ko|Do · Vault-lista",
@@ -175,7 +175,7 @@ export const STRINGS = {
     waitlistEyebrow: "Be the first to know",
     waitlistTitle: "Send me an email.",
     waitlistSub:
-      "I'll send one email when v3.0 ships. No newsletter. No marketing. You can unsubscribe anytime.",
+      "You'll receive exactly one email the day v3.0 goes live. No newsletter. No marketing. No follow-ups.",
     waitlistEmailPlaceholder: "you@email.com",
     waitlistButton: "Sign me up",
     waitlistButtonLoading: "Sending...",
@@ -184,7 +184,7 @@ export const STRINGS = {
     waitlistInvalidEmail: "Invalid email address",
     waitlistAlready: "You're already on the list. Thanks!",
     waitlistConsent:
-      "By signing up you accept that I contact you about Ko|Do · Vault. No third-party sharing.",
+      "Your email address is used solely for this single notification. Absolutely no third-party sharing.",
 
     emailSubject: "Welcome to the Ko|Do · Vault list",
     emailGreeting: "Thank you!",
