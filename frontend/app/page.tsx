@@ -90,10 +90,10 @@ export default function LandingPage() {
             href="#"
             data-testid="brand-logo"
             className="flex items-baseline gap-2 group"
-            aria-label="Ko|Do · Vault"
+            aria-label="Ko | Do · Vault"
           >
             <span className="text-base sm:text-lg font-light text-white/80 group-hover:text-white transition tracking-tight">
-              Ko|Do
+              Ko <span className="text-white/35">|</span> Do
             </span>
             <span className="text-white/35 text-base sm:text-lg">·</span>
             <span className="text-base sm:text-lg font-semibold text-white tracking-tight">
