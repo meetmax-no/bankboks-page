@@ -42,16 +42,18 @@ One-pager landingside som samler waitlist-emails via Resend. Helt isolert fra va
 
 ## Env-vars (Vercel — Production)
 
-| Variabel | Verdi |
+> **Faktiske verdier ligger kun i Vercel** (Settings → Environment Variables). De skal aldri commits til repoet. Hvis du trenger dem: kopier fra Vercel-dashboardet.
+
+| Variabel | Beskrivelse |
 |---|---|
-| `RESEND_API_KEY` | `re_3jNZ3E8g_8pQsyBMKQc9k59AqL48Atg6a` |
-| `RESEND_AUDIENCE_ID` | `661b2d14-9a5a-478d-9691-9c53a5d9789e` |
-| `RESEND_FROM_EMAIL` | `onboarding@resend.dev` *(start — bytt til `noreply@kodovault.no` når domenet er verifisert i Resend)* |
-| `RESEND_FROM_NAME` | `Ko \| Do · Vault` *(NB: pipe må escapes `\|` i Vercel-UI-ets tabellvisning, men verdien skal være `Ko | Do · Vault` med mellomrom rundt pipe)* |
+| `RESEND_API_KEY` | Resend dashboard → API Keys |
+| `RESEND_AUDIENCE_ID` | Resend dashboard → Audiences (UUID) |
+| `RESEND_FROM_EMAIL` | `noreply@kodovault.no` (domene verifisert i Resend) |
+| `RESEND_FROM_NAME` | `Ko \| Do · Vault` (mellomrom rundt pipe) |
 | `RESEND_BCC_EMAIL` | `firma@meetmax.no` |
 | `NEXT_PUBLIC_APP_URL` | `https://app.kodovault.no` |
 
-**Sikkerhet**: `RESEND_API_KEY` over er ekte live-nøkkel. Rotér via Resend dashboard → API Keys hvis den noen gang lekker utenfor Vercel.
+**Sikkerhetsregel**: Behandle `RESEND_API_KEY` som passord. Eksponert tidligere i offentlig repo (5. mai 2026) → rotert. Ikke lim inn i markdown-filer eller chatter igjen.
 
 ## Deploy-flyt
 1. Kode endres i `/app/frontend/` (Emergent workspace)
