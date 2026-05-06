@@ -115,7 +115,7 @@ export const WaitlistForm = forwardRef<HTMLDivElement, WaitlistFormProps>(
             <form
               onSubmit={handleSubmit}
               data-testid="waitlist-form"
-              className="space-y-3"
+              className="space-y-3 px-8 sm:px-0"
               noValidate
             >
               <div className="relative">
