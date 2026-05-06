@@ -132,7 +132,7 @@ export const WaitlistForm = forwardRef<HTMLDivElement, WaitlistFormProps>(
                     if (status === "error") setStatus("idle");
                   }}
                   data-testid="waitlist-email-input"
-                  className="w-full h-13 sm:h-14 pl-12 pr-4 rounded-full bg-white/[0.04] backdrop-blur-xl border border-white/12 focus:border-white/35 focus:bg-white/[0.06] outline-none text-white text-[15px] placeholder:text-white/30 transition-all"
+                  className="w-full h-14 pl-12 pr-4 rounded-full bg-white/[0.04] backdrop-blur-xl border border-white/12 focus:border-white/35 focus:bg-white/[0.06] outline-none text-white text-[15px] placeholder:text-white/30 transition-all"
                   aria-label={s.waitlistEmailPlaceholder}
                 />
               </div>
@@ -141,7 +141,7 @@ export const WaitlistForm = forwardRef<HTMLDivElement, WaitlistFormProps>(
                 type="submit"
                 data-testid="waitlist-submit-btn"
                 disabled={status === "loading" || !email.trim()}
-                className="w-full h-13 sm:h-14 rounded-full font-semibold text-[15px] tracking-wide transition-all hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
+                className="w-full h-14 rounded-full font-semibold text-[15px] tracking-wide transition-all hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
                 style={{
                   backgroundColor: "var(--accent)",
                   color: "#0a0e1a",
