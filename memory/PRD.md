@@ -58,9 +58,10 @@ One-pager landingside som samler waitlist-emails via Resend. Helt isolert fra va
 ## Deploy-flyt
 1. Kode endres i `/app/frontend/` (Emergent workspace)
 2. «Save to Github» → pusher til `meetmax-no/bankboks-page` `main` som `emergent-agent-e1`
-3. ⚠️ **Vercel blokkerer auto-deploy** fordi `emergent-agent-e1` (bot) ikke har Vercel-konto koblet — sikkerhets-feature på private Pro-repos
-4. **Manuell redeploy**: Vercel → Deployments → blokkert deploy → ⋯ → **Redeploy** (5 sek, du som logget inn bruker overstyrer kravet)
-5. Alternativt: sett opp Deploy Hook + GitHub Actions for full automasjon (se backlog)
+3. ⚠️ **Vercel blokkerer deploy** fordi `emergent-agent-e1` (bot) ikke har Vercel-konto koblet — sikkerhets-feature på private Pro-repos
+4. ⚠️ **Manuell «Redeploy» i Vercel virker IKKE heller** — blokkeringen er knyttet til commiten, ikke handlingen
+5. ✅ **Den fungerende workarounden**: rediger en hvilken som helst fil i GitHub web-UI (f.eks. en bokstav i `README.md`/`LesMeg.md`) → commit-author blir deg (trusted Vercel-konto) → Vercel deployer **hele `main`-tilstanden** inkludert alle bot-commits siden forrige deploy
+6. Alternativ: sett opp Deploy Hook + GitHub Actions for full automasjon (se backlog)
 
 ## Status — v1.0 ferdig
 - ✅ **LIVE** på https://www.kodovault.no (5. mai 2026)
