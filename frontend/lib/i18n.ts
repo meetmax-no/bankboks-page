@@ -57,16 +57,16 @@ export const STRINGS = {
       "Hver beslutning testes mot dette: Er sikkerheten matematisk garantert, eller stoler vi på at noen oppfører seg pent? Hvis det er tvil — bygges det ikke.",
 
     // Roadmap
-    roadmapEyebrow: "Hva som kommer",
-    roadmapTitle: "Arkitektonisk veikart.",
+    roadmapEyebrow: "Bygget, versjon for versjon",
+    roadmapTitle: "Det meste er alt i vaulten.",
     roadmapSub:
-      "Versjon for versjon. Ingenting slippes før det er 100 % fullført. Tidsfrister viker alltid for sikkerhet.",
+      "Passord, kort, ID-er og sikker overlevering er i vaulten i dag. Dokument-laget er det neste.",
     v3_0Title: "Bankkort og virtuelle kort",
     v3_0Body:
       "Egen kryptert arkitektur for alle typer betalingskort. Inkluderer en fullstendig isolert kamerafunksjon for skanning — bildet går rett i hvelvet, og berører aldri telefonens bildegalleri eller iCloud.",
-    v3_1Title: "2FA TOTP integrert",
+    v3_1Title: "ID-er: pass og førerkort",
     v3_1Body:
-      "Tidsbaserte engangskoder genereres direkte i hvelvet. Ved tap eller bytte av enhet, er alle kodene dine umiddelbart tilgjengelige via din master-nøkkel. Ingen separat authenticator-app kreves.",
+      "Pass, førerkort, ID-kort og helse-/forsikringskort — strukturert og søkbart i vaulten. Fotografert med et isolert kamera som aldri rører telefonens bildegalleri.",
     v4_0Title: "Sikker overlevering",
     v4_0Body:
       "Engangspakker (.kodoenc). Krypter dokumenter for én spesifikk mottaker. Null server-involvering. Nøyaktig den samme sikkerheten som PGP, strippet for all friksjon.",
@@ -75,10 +75,10 @@ export const STRINGS = {
       "Bring Your Own Storage (BYO). Google Drive, Dropbox eller en lokal USB. En virtuell, sikker disk for notater, PDF-er og dokumenter. Mountes med master-passordet, demonteres umiddelbart ved auto-lås.",
 
     // Waitlist
-    waitlistEyebrow: "Bli den første som får vite",
+    waitlistEyebrow: "Følg med",
     waitlistTitle: "Send meg én mail.",
     waitlistSub:
-      "Du mottar nøyaktig én e-post den dagen v3.0 er operativ. Ingen nyhetsbrev. Ingen markedsføring. Ingen oppfølging.",
+      "Legg igjen e-posten, så holder jeg deg oppdatert på nytt fra vaulten. Ingen nyhetsbrev. Ingen markedsføring. Ingen oppfølging.",
     waitlistEmailPlaceholder: "din@epost.no",
     waitlistButton: "Meld meg på",
     waitlistButtonLoading: "Sender...",
@@ -93,7 +93,7 @@ export const STRINGS = {
     emailSubject: "Velkommen på Ko | Do · Vault-lista",
     emailGreeting: "Takk!",
     emailBody1:
-      "Du er på lista. Jeg sier fra når v3.0 er klar — sannsynligvis i løpet av våren 2026.",
+      "Takk for interessen. Jeg holder deg oppdatert på nytt fra Ko | Do · Vault.",
     emailBody2:
       "Ko | Do · Vault bygges fra grunnen av med ett prinsipp: 100% eller null. Lean Security · Not Security as a Service.",
     emailBody3:
@@ -106,7 +106,7 @@ export const STRINGS = {
     footerLine1: "Ko | Do · Vault",
     footerLine2: "Arkitektur av Michael Aagreen",
     footerLine3: "Bygget i Norge · Drevet av Upstash i EU · Hosted i EU",
-    footerStatus: "Kommer snart",
+    footerStatus: "Live",
 
     // Misc
     skipToContent: "Hopp til innhold",
@@ -155,16 +155,16 @@ export const STRINGS = {
     northBody:
       "Every decision is tested against this: Is the security mathematically guaranteed, or are we trusting that someone behaves nicely? If in doubt — it won't be built.",
 
-    roadmapEyebrow: "What's coming",
-    roadmapTitle: "Architectural roadmap.",
+    roadmapEyebrow: "Built, version by version",
+    roadmapTitle: "Most of it is already in the vault.",
     roadmapSub:
-      "Version by version. Nothing ships until it's 100% complete. Deadlines always yield to security.",
+      "Passwords, cards, IDs and secure handoff are in the vault today. The document layer is next.",
     v3_0Title: "Debit and virtual cards",
     v3_0Body:
       "Dedicated encrypted architecture for all types of payment cards. Includes a fully isolated camera function for scanning — the image goes straight to the vault, never touching the phone's photo gallery or iCloud.",
-    v3_1Title: "2FA TOTP integrated",
+    v3_1Title: "IDs: passport and driver's license",
     v3_1Body:
-      "Time-based one-time codes generated directly in the vault. If you lose or switch devices, all your codes are instantly available via your master key. No separate authenticator app required.",
+      "Passport, driver's license, ID card and health/insurance cards — structured and searchable in the vault. Captured with an isolated camera that never touches your phone's photo gallery.",
     v4_0Title: "Secure handoff",
     v4_0Body:
       "One-time packages (.kodoenc). Encrypt documents for one specific recipient. Zero server involvement. The exact same security as PGP, stripped of all friction.",
@@ -172,10 +172,10 @@ export const STRINGS = {
     v4_5Body:
       "Bring Your Own Storage (BYO). Google Drive, Dropbox, or a local USB. A virtual, secure disk for notes, PDFs and documents. Mounted with the master password, dismounted instantly on auto-lock.",
 
-    waitlistEyebrow: "Be the first to know",
+    waitlistEyebrow: "Stay in the loop",
     waitlistTitle: "Send me an email.",
     waitlistSub:
-      "You'll receive exactly one email the day v3.0 goes live. No newsletter. No marketing. No follow-ups.",
+      "Leave your email and I'll keep you posted on what's new in the vault. No newsletter. No marketing. No follow-ups.",
     waitlistEmailPlaceholder: "you@email.com",
     waitlistButton: "Sign me up",
     waitlistButtonLoading: "Sending...",
@@ -189,7 +189,7 @@ export const STRINGS = {
     emailSubject: "Welcome to the Ko | Do · Vault list",
     emailGreeting: "Thank you!",
     emailBody1:
-      "You're on the list. I'll let you know when v3.0 ships — likely during spring 2026.",
+      "Thanks for your interest. I'll keep you posted on what's new from Ko | Do · Vault.",
     emailBody2:
       "Ko | Do · Vault is built from the ground up on one principle: 100% or nothing. Lean Security · Not Security as a Service.",
     emailBody3:
@@ -201,7 +201,7 @@ export const STRINGS = {
     footerLine1: "Ko | Do · Vault",
     footerLine2: "Architecture by Michael Aagreen",
     footerLine3: "Built in Norway · Powered by Upstash in the EU · Hosted in the EU",
-    footerStatus: "Coming soon",
+    footerStatus: "Live",
 
     skipToContent: "Skip to content",
     languageNorwegian: "Norwegian",

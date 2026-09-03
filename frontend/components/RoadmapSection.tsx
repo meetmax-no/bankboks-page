@@ -103,7 +103,7 @@ export function RoadmapSection({ locale }: RoadmapSectionProps) {
             icon={Send}
           />
           <RoadmapItem
-            version="v4.5"
+            version="Neste"
             title={s.v4_5Title}
             body={s.v4_5Body}
             icon={FolderLock}
