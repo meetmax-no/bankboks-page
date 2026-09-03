@@ -20,7 +20,7 @@ export const STRINGS = {
       "En personlig passord-vault. Bygget for én bruker av gangen. Et design utelukkende styrt av hensynet til din sikkerhet.",
     heroSubtitle2:
       "Ingen eksterne investorer. Ingen oppblåste funksjoner. Kun kompromissløs kryptografi.",
-    heroCta: "Send meg én mail",
+    heroCta: "Kom i gang",
     heroSecondary: "Les hvorfor",
     heroSignature: "— Michael, februar 2026",
 
@@ -74,6 +74,35 @@ export const STRINGS = {
     v4_5Body:
       "Bring Your Own Storage (BYO). Google Drive, Dropbox eller en lokal USB. En virtuell, sikker disk for notater, PDF-er og dokumenter. Mountes med master-passordet, demonteres umiddelbart ved auto-lås.",
 
+    // Kom i gang (plan-velger) — priser hentes dynamisk via /api/pricing
+    pricingEyebrow: "Velg din plan",
+    pricingTitle: "Kom i gang på ett minutt.",
+    pricingSub:
+      "Start gratis, ingen kortinfo. Oppgrader når du vil — eller la være. Du eier dataene uansett.",
+    planTrialName: "Prøveperiode",
+    planTrialPrice: "Gratis",
+    trialForWord: "i",
+    daysWord: "dager",
+    planTrialDesc: "Test alt. Ingen kortinfo nødvendig.",
+    planTrialB1: "Full vault-funksjonalitet",
+    planTrialB2: "Ingen kortinfo nødvendig",
+    planTrialCta: "Start prøveperioden",
+    planMonthlyName: "Månedlig",
+    perMonth: "/mnd",
+    planMonthlyDesc: "Full tilgang. Si opp når som helst.",
+    planMonthlyB1: "Alt i prøveperioden",
+    planMonthlyB2: "Avbryt når som helst",
+    planMonthlyCta: "Velg månedlig",
+    planYearlyName: "Årlig",
+    perYear: "/år",
+    yearlyBadge: "Best verdi",
+    planYearlyDesc: "Best verdi over tid.",
+    yearlySaveSuffix: " % rimeligere enn månedlig",
+    planYearlyB2: "Angrerett innen 14 dager",
+    planYearlyCta: "Velg årlig",
+    pricingB2bLine: "Bedrift med flere ansatte?",
+    pricingB2bCta: "Ta kontakt →",
+
     // Waitlist
     waitlistEyebrow: "Følg med",
     waitlistTitle: "Send meg én mail.",
@@ -122,7 +151,7 @@ export const STRINGS = {
       "A personal password vault. Built for one user at a time. A design driven exclusively by your security.",
     heroSubtitle2:
       "No external investors. No bloated features. Only uncompromising cryptography.",
-    heroCta: "Send me an email",
+    heroCta: "Get started",
     heroSecondary: "Read why",
     heroSignature: "— Michael, February 2026",
 
@@ -171,6 +200,35 @@ export const STRINGS = {
     v4_5Title: "Document layer",
     v4_5Body:
       "Bring Your Own Storage (BYO). Google Drive, Dropbox, or a local USB. A virtual, secure disk for notes, PDFs and documents. Mounted with the master password, dismounted instantly on auto-lock.",
+
+    // Get started (plan selector) — prices fetched dynamically via /api/pricing
+    pricingEyebrow: "Choose your plan",
+    pricingTitle: "Get started in a minute.",
+    pricingSub:
+      "Start free, no card required. Upgrade whenever — or don't. You own your data either way.",
+    planTrialName: "Free trial",
+    planTrialPrice: "Free",
+    trialForWord: "for",
+    daysWord: "days",
+    planTrialDesc: "Test everything. No card required.",
+    planTrialB1: "Full vault functionality",
+    planTrialB2: "No card required",
+    planTrialCta: "Start free trial",
+    planMonthlyName: "Monthly",
+    perMonth: "/mo",
+    planMonthlyDesc: "Full access. Cancel anytime.",
+    planMonthlyB1: "Everything in the trial",
+    planMonthlyB2: "Cancel anytime",
+    planMonthlyCta: "Choose monthly",
+    planYearlyName: "Yearly",
+    perYear: "/yr",
+    yearlyBadge: "Best value",
+    planYearlyDesc: "Best value over time.",
+    yearlySaveSuffix: " % cheaper than monthly",
+    planYearlyB2: "14-day refund window",
+    planYearlyCta: "Choose yearly",
+    pricingB2bLine: "A team with several employees?",
+    pricingB2bCta: "Get in touch →",
 
     waitlistEyebrow: "Stay in the loop",
     waitlistTitle: "Send me an email.",

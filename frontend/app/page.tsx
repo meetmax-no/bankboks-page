@@ -8,6 +8,7 @@ import { ProblemSection } from "@/components/ProblemSection";
 import { ArchitectureSection } from "@/components/ArchitectureSection";
 import { NorthStarSection } from "@/components/NorthStarSection";
 import { RoadmapSection } from "@/components/RoadmapSection";
+import { PricingSection } from "@/components/PricingSection";
 import { WaitlistForm } from "@/components/WaitlistForm";
 import { Footer } from "@/components/Footer";
 import type { Locale } from "@/lib/i18n";
@@ -23,6 +24,7 @@ export default function LandingPage() {
   const [locale, setLocale] = useState<Locale>("nb");
   const [mounted, setMounted] = useState(false);
   const waitlistRef = useRef<HTMLDivElement | null>(null);
+  const pricingRef = useRef<HTMLDivElement | null>(null);
 
   // Default = ALLTID norsk. Engelsk er bonus for utenlands-trafikk.
   useEffect(() => {
@@ -47,8 +49,8 @@ export default function LandingPage() {
     }
   }, [locale, mounted]);
 
-  const scrollToWaitlist = () => {
-    waitlistRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const scrollToPricing = () => {
+    pricingRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -105,11 +107,12 @@ export default function LandingPage() {
 
       {/* Innhold */}
       <main className="relative z-10">
-        <HeroSection locale={locale} onCtaClick={scrollToWaitlist} />
+        <HeroSection locale={locale} onCtaClick={scrollToPricing} />
         <ProblemSection locale={locale} />
         <ArchitectureSection locale={locale} />
         <NorthStarSection locale={locale} />
         <RoadmapSection locale={locale} />
+        <PricingSection locale={locale} ref={pricingRef} />
         <WaitlistForm locale={locale} ref={waitlistRef} />
         <Footer locale={locale} />
       </main>
