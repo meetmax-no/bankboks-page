@@ -9,6 +9,7 @@ import { ArchitectureSection } from "@/components/ArchitectureSection";
 import { NorthStarSection } from "@/components/NorthStarSection";
 import { RoadmapSection } from "@/components/RoadmapSection";
 import { PricingSection } from "@/components/PricingSection";
+import { FaqSection } from "@/components/FaqSection";
 import { WaitlistForm } from "@/components/WaitlistForm";
 import { Footer } from "@/components/Footer";
 import type { Locale } from "@/lib/i18n";
@@ -113,6 +114,7 @@ export default function LandingPage() {
         <NorthStarSection locale={locale} />
         <RoadmapSection locale={locale} />
         <PricingSection locale={locale} ref={pricingRef} />
+        <FaqSection locale={locale} />
         <WaitlistForm locale={locale} ref={waitlistRef} />
         <Footer locale={locale} />
       </main>

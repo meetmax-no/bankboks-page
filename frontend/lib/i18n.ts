@@ -103,11 +103,31 @@ export const STRINGS = {
     pricingB2bLine: "Bedrift med flere ansatte?",
     pricingB2bCta: "Ta kontakt →",
 
+    // FAQ
+    faqEyebrow: "Spørsmål og svar",
+    faqTitle: "Det du lurer på.",
+    faqQ1: "Hva skjer hvis jeg glemmer master-passordet?",
+    faqA1:
+      "Da er dataene borte. For alltid. Ingen reset, ingen bakdør — det er hele poenget. Kun du har tilgang til dine data gjennom ditt MasterPassord.",
+    faqQ2: "Kan dere se dataene mine?",
+    faqA2:
+      "Nei. Alle data håndteres og krypteres i nettleseren din. Når data forlater din nettleser er de kryptert.",
+    faqQ3: "Hvor lagres dataene?",
+    faqA3:
+      "I EU (Frankfurt + Stockholm). Schrems II-kompatibelt, bygget i Norge.",
+    faqQ4: "Hva skjer hvis Ko | Do legges ned?",
+    faqA4:
+      "Du eksporterer alt. Filformatet er dokumentert og kan dekrypteres uten oss vha annen teknisk bistand.",
+    faqQ5: "Må jeg installere noe?",
+    faqA5:
+      "Nei. Kjører 100 % i nettleseren — Chrome, Safari, Firefox, Brave. Touch/Face ID der det støttes. Det betyr har du tilgang til en nettleser så har du tilgang til dine data, uavhengig av hvor du er i verden.",
+
     // Waitlist
     waitlistEyebrow: "Følg med",
     waitlistTitle: "Send meg én mail.",
     waitlistSub:
       "Legg igjen e-posten, så holder jeg deg oppdatert på nytt fra vaulten. Ingen nyhetsbrev. Ingen markedsføring. Ingen oppfølging.",
+    waitlistOneLiner: "Ikke klar ennå? Legg igjen e-posten, så sier jeg fra om nytt.",
     waitlistEmailPlaceholder: "din@epost.no",
     waitlistButton: "Meld meg på",
     waitlistButtonLoading: "Sender...",
@@ -230,10 +250,30 @@ export const STRINGS = {
     pricingB2bLine: "A team with several employees?",
     pricingB2bCta: "Get in touch →",
 
+    // FAQ
+    faqEyebrow: "Questions and answers",
+    faqTitle: "What you’re wondering.",
+    faqQ1: "What happens if I forget my master password?",
+    faqA1:
+      "Then your data is gone. Forever. No reset, no backdoor — that is the whole point. Only you have access to your data, through your master password.",
+    faqQ2: "Can you see my data?",
+    faqA2:
+      "No. All data is handled and encrypted in your browser. When data leaves your browser, it is encrypted.",
+    faqQ3: "Where is the data stored?",
+    faqA3:
+      "In the EU (Frankfurt + Stockholm). Schrems II-compliant, built in Norway.",
+    faqQ4: "What happens if Ko | Do shuts down?",
+    faqA4:
+      "You export everything. The file format is documented and can be decrypted without us, with other technical assistance.",
+    faqQ5: "Do I need to install anything?",
+    faqA5:
+      "No. Runs 100 % in the browser — Chrome, Safari, Firefox, Brave. Touch/Face ID where supported. That means if you have access to a browser, you have access to your data, wherever you are in the world.",
+
     waitlistEyebrow: "Stay in the loop",
     waitlistTitle: "Send me an email.",
     waitlistSub:
       "Leave your email and I'll keep you posted on what's new in the vault. No newsletter. No marketing. No follow-ups.",
+    waitlistOneLiner: "Not ready yet? Leave your email and I'll let you know what’s new.",
     waitlistEmailPlaceholder: "you@email.com",
     waitlistButton: "Sign me up",
     waitlistButtonLoading: "Sending...",
