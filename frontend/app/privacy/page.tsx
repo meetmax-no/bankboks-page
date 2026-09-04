@@ -136,9 +136,11 @@ export default function PrivacyPage() {
         payment details — and this may be processed in the US.
       </p>
       <p>
-        Transfers rely on the EU Standard Contractual Clauses (SCC), and for those
-        providers certified under the EU–US Data Privacy Framework, on that framework
-        as well. <strong>A copy of the standard clauses is available on request.</strong>
+        Transfers rely on the EU Standard Contractual Clauses (SCC). Several of the
+        providers — among them Upstash and Resend — are additionally certified under
+        the EU–US Data Privacy Framework. Certifications can change or lapse, so the
+        SCC remain the mechanism we rely on.{" "}
+        <strong>A copy of the standard clauses is available on request.</strong>
       </p>
 
       <H2>7. Retention</H2>

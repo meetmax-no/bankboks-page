@@ -133,10 +133,11 @@ export default function PersonvernPage() {
         betalingsopplysninger — og dette kan behandles i USA.
       </p>
       <p>
-        Overføringene skjer på grunnlag av EUs standard personvernbestemmelser (SCC),
-        og for de leverandørene som er sertifisert under EU–US Data Privacy Framework
-        også på grunnlag av rammeverket. <strong>Kopi av standardbestemmelsene kan
-        fås ved henvendelse til oss.</strong>
+        Overføringene skjer på grunnlag av EUs standard personvernbestemmelser
+        (SCC). Flere av leverandørene — blant andre Upstash og Resend — er i tillegg
+        sertifisert under EU–US Data Privacy Framework. Sertifiseringer kan endres
+        eller bortfalle, og SCC er derfor det bærende grunnlaget vi støtter oss på.{" "}
+        <strong>Kopi av standardbestemmelsene kan fås ved henvendelse til oss.</strong>
       </p>
 
       <H2>7. Hvor lenge vi lagrer</H2>
