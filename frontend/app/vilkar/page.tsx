@@ -59,7 +59,7 @@ export default function VilkarPage() {
 
       <H2>5. Priser og betaling</H2>
       <UL>
-        <li>Gjeldende priser vises på kodovault.no.</li>
+        <li>Gjeldende priser vises på kodovault.no. Alle priser er oppgitt inkl. mva.</li>
         <li>Betaling håndteres av Stripe. Vi mottar aldri kortnummeret ditt.</li>
         <li>Abonnementet fornyes automatisk til det sies opp.</li>
         <li>Prisendringer varsles på e-post minst 30 dager før de trer i kraft.</li>

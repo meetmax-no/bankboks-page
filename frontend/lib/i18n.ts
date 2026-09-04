@@ -100,6 +100,7 @@ export const STRINGS = {
     yearlySaveSuffix: " % rimeligere enn månedlig",
     planYearlyB2: "Angrerett innen 14 dager",
     planYearlyCta: "Velg årlig",
+    pricingVat: "Alle priser er oppgitt inkl. mva.",
     pricingB2bLine: "Bedrift med flere ansatte?",
     pricingB2bCta: "Ta kontakt →",
 
@@ -277,6 +278,7 @@ export const STRINGS = {
     yearlySaveSuffix: " % cheaper than monthly",
     planYearlyB2: "14-day refund window",
     planYearlyCta: "Choose yearly",
+    pricingVat: "All prices include VAT.",
     pricingB2bLine: "A team with several employees?",
     pricingB2bCta: "Get in touch →",
 

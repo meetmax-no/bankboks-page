@@ -221,7 +221,11 @@ export const PricingSection = forwardRef<HTMLDivElement, PricingSectionProps>(
             })}
           </div>
 
-          <p className="text-center text-sm text-white/45 mt-8">
+          <p className="text-center text-xs text-white/35 mt-6">
+            {s.pricingVat}
+          </p>
+
+          <p className="text-center text-sm text-white/45 mt-4">
             {s.pricingB2bLine}{" "}
             <a
               href="mailto:kontakt@kodovault.no"
