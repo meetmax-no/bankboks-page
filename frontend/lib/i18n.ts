@@ -110,6 +110,8 @@ export const STRINGS = {
     showcaseSub:
       "Vaulten kjører i nettleseren — på maskinen, på mobilen, på en lånt telefon i utlandet. Ingenting å installere.",
     shotPending: "Skjermbilde kommer",
+    showcaseShowAll: "Se flere skjermbilder",
+    showcaseHide: "Skjul skjermbildene",
     shotLockAlt: "Ko | Do Vault låseskjerm i nettleseren, med Touch ID og master-passord",
     shotLockCaption:
       "Slik møter den deg: låst, i nettleseren. Touch ID eller master-passord — og en ærlig beskjed om at vaulten ikke kan gjenopprettes.",
@@ -288,6 +290,8 @@ export const STRINGS = {
     showcaseSub:
       "The vault runs in your browser — on your computer, your phone, or a borrowed phone abroad. Nothing to install.",
     shotPending: "Screenshot coming",
+    showcaseShowAll: "See more screenshots",
+    showcaseHide: "Hide screenshots",
     shotLockAlt: "Ko | Do Vault lock screen in the browser, with Touch ID and master password",
     shotLockCaption:
       "How it meets you: locked, in the browser. Touch ID or master password — and an honest note that the vault cannot be recovered.",

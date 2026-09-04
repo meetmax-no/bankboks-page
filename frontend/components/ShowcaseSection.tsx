@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { STRINGS, type Locale } from "@/lib/i18n";
 
 interface ShowcaseSectionProps {
@@ -68,6 +69,7 @@ function Shot({
 
 export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
   const s = STRINGS[locale];
+  const [open, setOpen] = useState(false);
 
   // Rekkefølge: inngang (master-passord, lab) -> innhold (oversikt, kort)
   // -> drift (backup, mobil). Mobilbildet er portrett 0,45 og får smalere
@@ -114,24 +116,45 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
           </figcaption>
         </figure>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mt-16 items-start">
-          {cards.map((c) => (
-            <figure key={c.src} className="m-0">
-              <div className={c.narrow ? "mx-auto w-full max-w-[280px]" : ""}>
-                <Shot src={c.src} alt={c.alt} pending={s.shotPending} />
-              </div>
-              <figcaption
-                className={
-                  c.narrow
-                    ? "mt-4 text-sm text-white/45 text-center"
-                    : "mt-4 text-sm text-white/45"
-                }
-              >
-                {c.cap}
-              </figcaption>
-            </figure>
-          ))}
+        <div className="mt-10 flex justify-center">
+          <button
+            type="button"
+            data-testid="showcase-toggle"
+            aria-expanded={open}
+            aria-controls="showcase-grid"
+            onClick={() => setOpen((v) => !v)}
+            className="h-11 px-5 rounded-full border border-white/15 text-white/80 hover:text-white hover:bg-white/[0.06] text-sm font-medium transition-all flex items-center gap-2"
+          >
+            {open ? s.showcaseHide : `${s.showcaseShowAll} (${cards.length})`}
+            <ChevronDown
+              className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
+            />
+          </button>
         </div>
+
+        {open && (
+          <div
+            id="showcase-grid"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mt-12 items-start"
+          >
+            {cards.map((c) => (
+              <figure key={c.src} className="m-0">
+                <div className={c.narrow ? "mx-auto w-full max-w-[280px]" : ""}>
+                  <Shot src={c.src} alt={c.alt} pending={s.shotPending} />
+                </div>
+                <figcaption
+                  className={
+                    c.narrow
+                      ? "mt-4 text-sm text-white/45 text-center"
+                      : "mt-4 text-sm text-white/45"
+                  }
+                >
+                  {c.cap}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        )}
 
       </div>
     </section>
