@@ -134,7 +134,7 @@ export default function PersonvernPage() {
       </p>
       <p>
         Overføringene skjer på grunnlag av EUs standard personvernbestemmelser
-        (SCC). Flere av leverandørene — blant andre Upstash og Resend — er i tillegg
+        (SCC). Flere av leverandørene — blant andre Upstash, Vercel og Resend — er i tillegg
         sertifisert under EU–US Data Privacy Framework. Sertifiseringer kan endres
         eller bortfalle, og SCC er derfor det bærende grunnlaget vi støtter oss på.{" "}
         <strong>Kopi av standardbestemmelsene kan fås ved henvendelse til oss.</strong>

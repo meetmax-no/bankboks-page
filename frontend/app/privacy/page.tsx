@@ -137,7 +137,7 @@ export default function PrivacyPage() {
       </p>
       <p>
         Transfers rely on the EU Standard Contractual Clauses (SCC). Several of the
-        providers — among them Upstash and Resend — are additionally certified under
+        providers — among them Upstash, Vercel and Resend — are additionally certified under
         the EU–US Data Privacy Framework. Certifications can change or lapse, so the
         SCC remain the mechanism we rely on.{" "}
         <strong>A copy of the standard clauses is available on request.</strong>
