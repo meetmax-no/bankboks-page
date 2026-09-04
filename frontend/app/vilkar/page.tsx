@@ -46,7 +46,8 @@ export default function VilkarPage() {
       <H2>3. Hvem kan inngå avtalen</H2>
       <p>
         Du må være 18 år og ha rettslig handleevne for å inngå avtalen. Er du under
-        18 år, kan tjenesten bare brukes med samtykke fra foresatt.
+        18 år, må en foresatt inngå avtalen på dine vegne. Den foresatte er da
+        avtalepart og ansvarlig for abonnementet.
       </p>
 
       <H2>4. Master-passordet — les dette nøye</H2>
@@ -71,7 +72,8 @@ export default function VilkarPage() {
       </p>
       <UL>
         <li>Vi varsler deg på e-post 5 dager før prøveperioden utløper.</li>
-        <li>Velger du ingen betalt plan, låses vaulten ved utløp. Låst vault kan ikke leses eller endres.</li>
+        <li>Velger du ingen betalt plan, låses vaulten ved utløp. En låst vault kan ikke brukes — du kan verken lese eller endre innholdet.</li>
+        <li>Du kan likevel få ut dataene dine i hele 28-dagersperioden, uten å betale. Se punkt 10.</li>
         <li>Dataene beholdes i 28 dager etter låsing. Du får varsel på e-post 7 dager før sletting.</li>
         <li>Etter 28 dager slettes dataene permanent. Oppgraderer du innen fristen, gjenåpnes vaulten med innholdet i behold.</li>
       </UL>
@@ -96,6 +98,14 @@ export default function VilkarPage() {
         , så refunderer vi hele beløpet. Du trenger ikke oppgi noen grunn, og vi
         trekker ikke fra for perioden du har brukt tjenesten.
       </p>
+      <p>
+        Du kan melde fra på hvilken som helst måte — en vanlig e-post er nok. Ønsker
+        du å bruke det lovbestemte skjemaet, finner du det her:{" "}
+        <a className="underline underline-offset-2 hover:text-white" href="/angrerett">
+          angreskjema
+        </a>
+        .
+      </p>
 
       <H2>8. Hvis en betaling ikke går gjennom</H2>
       <p>
@@ -117,8 +127,19 @@ export default function VilkarPage() {
       <p>
         Så lenge du har tilgang til vaulten, kan du når som helst eksportere hele
         innholdet selv — enten som kryptert backup-fil, eller som CSV i
-        Bitwarden-kompatibelt format. Vi anbefaler at du eksporterer før
-        prøveperioden utløper eller et abonnement avsluttes.
+        Bitwarden-kompatibelt format. Vi anbefaler at du eksporterer jevnlig, ikke
+        først når en frist nærmer seg.
+      </p>
+      <p>
+        <strong>Dette gjelder også når vaulten er låst.</strong> I hele
+        28-dagersperioden før sletting har du rett til å få ut dataene dine uten å
+        betale — enten direkte i appen, eller ved å be oss om den krypterte fila på{" "}
+        <a className="underline underline-offset-2 hover:text-white" href="mailto:kontakt@kodovault.no">
+          kontakt@kodovault.no
+        </a>
+        . Det er dine data. At vi ikke kan lese dem, betyr ikke at vi skal holde dem
+        tilbake — dekrypteringen skjer uansett lokalt på din enhet, med
+        master-passordet ditt.
       </p>
       <p>
         Du kan også slette vaulten og kontoen din permanent fra innstillingene.

@@ -51,8 +51,9 @@ export default function TermsPage() {
       <H2>3. Who may enter into this agreement</H2>
       <p>
         You must be 18 years old and have legal capacity to enter into this
-        agreement. If you are under 18, the service may only be used with the consent
-        of a guardian.
+        agreement. If you are under 18, a guardian must enter into the agreement on
+        your behalf. The guardian is then the contracting party and responsible for
+        the subscription.
       </p>
 
       <H2>4. Your master password — read this carefully</H2>
@@ -77,7 +78,8 @@ export default function TermsPage() {
       </p>
       <UL>
         <li>We notify you by email 5 days before the trial expires.</li>
-        <li>If you choose no paid plan, the vault is locked on expiry. A locked vault cannot be read or changed.</li>
+        <li>If you choose no paid plan, the vault is locked on expiry. A locked vault cannot be used — you can neither read nor change its contents.</li>
+        <li>You may still retrieve your data throughout the 28-day period, at no cost. See section 10.</li>
         <li>The data is kept for 28 days after locking. You receive an email warning 7 days before deletion.</li>
         <li>After 28 days the data is permanently deleted. If you upgrade within the deadline, the vault reopens with its contents intact.</li>
       </UL>
@@ -103,6 +105,14 @@ export default function TermsPage() {
         and we will refund the full amount. No reason required, and we make no
         deduction for the period you have used the service.
       </p>
+      <p>
+        You may notify us in any way you like — a plain email is enough. If you prefer
+        the statutory Norwegian withdrawal form, it is available here:{" "}
+        <a className="underline underline-offset-2 hover:text-white" href="/angrerett">
+          angreskjema
+        </a>
+        .
+      </p>
 
       <H2>8. If a payment fails</H2>
       <p>
@@ -124,8 +134,19 @@ export default function TermsPage() {
       <p>
         As long as you have access to the vault, you may export the entire contents
         yourself at any time — either as an encrypted backup file, or as CSV in a
-        Bitwarden-compatible format. We recommend exporting before a trial expires or
-        a subscription ends.
+        Bitwarden-compatible format. We recommend exporting regularly, not only when
+        a deadline approaches.
+      </p>
+      <p>
+        <strong>This applies to a locked vault as well.</strong> Throughout the 28-day
+        period before deletion you have the right to retrieve your data at no cost —
+        either directly in the app, or by asking us for the encrypted file at{" "}
+        <a className="underline underline-offset-2 hover:text-white" href="mailto:kontakt@kodovault.no">
+          kontakt@kodovault.no
+        </a>
+        . It is your data. The fact that we cannot read it is no reason for us to
+        withhold it — decryption happens locally on your device with your master
+        password either way.
       </p>
       <p>
         You may also permanently delete your vault and account from settings. Deletion

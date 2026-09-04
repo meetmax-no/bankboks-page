@@ -197,6 +197,7 @@ export const STRINGS = {
     footerStatus: "Live",
     footerTerms: "Vilkår",
     footerPrivacy: "Personvern",
+    footerWithdrawal: "Angreskjema",
 
     // Misc
     skipToContent: "Hopp til innhold",
@@ -382,6 +383,7 @@ export const STRINGS = {
     footerStatus: "Live",
     footerTerms: "Terms",
     footerPrivacy: "Privacy",
+    footerWithdrawal: "Withdrawal form",
 
     skipToContent: "Skip to content",
     languageNorwegian: "Norwegian",

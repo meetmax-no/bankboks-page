@@ -39,6 +39,16 @@ export function Footer({ locale }: FooterProps) {
             >
               {s.footerPrivacy}
             </Link>
+            <span className="text-white/20 text-[11px]">·</span>
+            {/* Angrerettloven § 8 (1) h — skjemaet skal være tilgjengelig, ikke
+                gjemt bak en e-postadresse. Samme norske side på begge språk;
+                skjemaet er lovbestemt og finnes kun på norsk. */}
+            <Link
+              href="/angrerett"
+              className="text-[11px] text-white/45 hover:text-white/80 underline underline-offset-2 transition"
+            >
+              {s.footerWithdrawal}
+            </Link>
           </div>
         </div>
 

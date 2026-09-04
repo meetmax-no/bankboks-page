@@ -143,10 +143,15 @@ export default function PersonvernPage() {
       <H2>7. Hvor lenge vi lagrer</H2>
       <UL>
         <li>
-          <strong>Konto og vault:</strong> til du sletter kontoen selv. Vaulten
-          slettes også automatisk 28 dager etter at den er låst — enten fordi
-          prøveperioden utløp eller fordi en betaling ikke gikk gjennom. Du varsles
-          på e-post 7 dager før.
+          <strong>Konto og vault:</strong> til du sletter kontoen selv, eller til
+          28 dager etter at vaulten ble låst — det som inntreffer først. Vaulten låses
+          når prøveperioden utløper eller en betaling ikke går gjennom, og slettes
+          automatisk 28 dager senere. Du varsles på e-post 7 dager før sletting, og du
+          kan hente ut dataene dine i hele perioden (se punkt 10 i{" "}
+          <a className="underline underline-offset-2 hover:text-white" href="/vilkar">
+            vilkårene
+          </a>
+          ).
         </li>
         <li>
           <strong>Stripe kunde-ID:</strong> til kontoen slettes.
