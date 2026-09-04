@@ -72,10 +72,18 @@ export default function PersonvernPage() {
         <li>Språkvalget ditt.</li>
         <li>
           <strong>Passkey (WebAuthn):</strong> aktiverer du Touch ID eller Face ID,
-          lagres credential-ID, salt og en kryptert kopi av master-passordet i
-          nettleserens lokale lagring. Den private nøkkelen forlater aldri enheten,
-          og vi registrerer ingen passkey på serveren. Selve opplåsingen logges som
-          en hendelse (se punkt 2), men nøkkelen gjør det ikke.
+          lagres credential-ID, et salt og en kryptert kopi av master-passordet i
+          nettleserens lokale lagring. Kopien er kryptert med AES-256-GCM, med en
+          nøkkel bare passkeyen din kan utlede — vi bruker WebAuthn-utvidelsen PRF,
+          som gir en hemmelighet bundet til passkeyen i enhetens sikkerhetsbrikke
+          (Secure Enclave / TPM). Nøkkelen lagres ingen steder; den utledes på nytt
+          ved hver opplåsing, og bare etter at Touch ID eller Face ID har bekreftet
+          at det er deg. Credential-ID og salt er ikke hemmeligheter og gir alene
+          ingen tilgang. Støtter ikke nettleseren din PRF, tilbyr vi ikke Touch ID
+          eller Face ID i det hele tatt — vi faller ikke tilbake på en svakere
+          løsning. Den private nøkkelen forlater aldri enheten, og vi registrerer
+          ingen passkey på serveren. Selve opplåsingen logges som en hendelse (se
+          punkt 2), men nøkkelen gjør det ikke.
         </li>
       </UL>
       <p>

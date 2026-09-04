@@ -76,9 +76,17 @@ export default function PrivacyPage() {
         <li>
           <strong>Passkey (WebAuthn):</strong> if you enable Touch ID or Face ID, the
           credential ID, a salt and an encrypted copy of your master password are
-          stored in your browser&rsquo;s local storage. The private key never leaves
-          your device, and we register no passkey on the server. The unlock itself is
-          recorded as an event (see section 2), but the key is not.
+          stored in your browser&rsquo;s local storage. That copy is encrypted with
+          AES-256-GCM under a key only your passkey can derive — we use the WebAuthn
+          PRF extension, which yields a secret bound to the passkey inside your
+          device&rsquo;s security chip (Secure Enclave / TPM). The key is stored
+          nowhere; it is re-derived on every unlock, and only after Touch ID or Face
+          ID has confirmed it is you. The credential ID and salt are not secrets and
+          grant no access on their own. If your browser does not support PRF, we do
+          not offer Touch ID or Face ID at all — we do not fall back to something
+          weaker. The private key never leaves your device, and we register no passkey
+          on the server. The unlock itself is recorded as an event (see section 2),
+          but the key is not.
         </li>
       </UL>
       <p>
