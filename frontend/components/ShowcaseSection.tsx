@@ -85,19 +85,19 @@ function AppShot({
       className="rounded-2xl overflow-hidden border border-white/12 bg-black/40 backdrop-blur-xl"
       style={{ boxShadow: "0 30px 70px -25px rgba(0,0,0,.7)" }}
     >
-      <div className="relative" style={{ aspectRatio: "4 / 5" }}>
-        {ok ? (
-          <img
-            src={src}
-            alt={alt}
-            loading="lazy"
-            onError={() => setOk(false)}
-            className="absolute inset-0 h-full w-full object-contain"
-          />
-        ) : (
+      {ok ? (
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          onError={() => setOk(false)}
+          className="block w-full h-auto"
+        />
+      ) : (
+        <div className="relative" style={{ aspectRatio: "4 / 5" }}>
           <Pending label={pending} />
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -136,7 +136,7 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
           </figcaption>
         </figure>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 mt-14 items-start">
           <figure className="m-0">
             <AppShot
               src="/shots/master-password.webp"
@@ -156,6 +156,17 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
             />
             <figcaption className="mt-4 text-sm text-white/45 text-center">
               {s.shotLabCaption}
+            </figcaption>
+          </figure>
+
+          <figure className="m-0">
+            <AppShot
+              src="/shots/backup.png"
+              alt={s.shotBackupAlt}
+              pending={s.shotPending}
+            />
+            <figcaption className="mt-4 text-sm text-white/45 text-center">
+              {s.shotBackupCaption}
             </figcaption>
           </figure>
         </div>

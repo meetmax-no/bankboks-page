@@ -118,6 +118,9 @@ export const STRINGS = {
     shotLabAlt: "Passord Lab med estimert brute-force-tid",
     shotLabCaption:
       "Passord Lab: test styrke og generer norske passfraser. Alt skjer i nettleseren — ingenting sendes til server.",
+    shotBackupAlt: "Backup og eksport — kryptert backup, CSV-eksport og permanent sletting",
+    shotBackupCaption:
+      "Ta med deg alt når du vil: kryptert backup eller Bitwarden-kompatibel CSV. Og du kan slette alt permanent.",
 
     // FAQ
     faqEyebrow: "Spørsmål og svar",
@@ -281,6 +284,9 @@ export const STRINGS = {
     shotLabAlt: "Password Lab showing estimated brute-force time",
     shotLabCaption:
       "Password Lab: test strength and generate Norwegian passphrases. Everything happens in your browser.",
+    shotBackupAlt: "Backup and export — encrypted backup, CSV export and permanent deletion",
+    shotBackupCaption:
+      "Take everything with you whenever: encrypted backup or Bitwarden-compatible CSV. And you can delete it all permanently.",
 
     // FAQ
     faqEyebrow: "Questions and answers",
