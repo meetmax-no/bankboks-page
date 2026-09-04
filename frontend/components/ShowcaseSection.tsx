@@ -69,12 +69,16 @@ function Shot({
 export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
   const s = STRINGS[locale];
 
+  // Rekkefølge: inngang (master-passord, lab) -> innhold (oversikt, kort)
+  // -> drift (backup, mobil). Mobilbildet er portrett 0,45 og får smalere
+  // innerbredde, ellers tårner det over nabokortet.
   const cards = [
-    { src: "/shots/vault-dashboard.webp", alt: s.shotDashAlt, cap: s.shotDashCaption },
-    { src: "/shots/card-detail.webp", alt: s.shotCardAlt, cap: s.shotCardCaption },
     { src: "/shots/master-password.webp", alt: s.shotMasterAlt, cap: s.shotMasterCaption },
     { src: "/shots/password-lab.png", alt: s.shotLabAlt, cap: s.shotLabCaption },
+    { src: "/shots/vault-dashboard.webp", alt: s.shotDashAlt, cap: s.shotDashCaption },
+    { src: "/shots/card-detail.webp", alt: s.shotCardAlt, cap: s.shotCardCaption },
     { src: "/shots/backup.png", alt: s.shotBackupAlt, cap: s.shotBackupCaption },
+    { src: "/shots/vault-mobile.webp", alt: s.shotMobileAlt, cap: s.shotMobileCaption, narrow: true },
   ];
 
   return (
@@ -113,27 +117,22 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mt-16 items-start">
           {cards.map((c) => (
             <figure key={c.src} className="m-0">
-              <Shot src={c.src} alt={c.alt} pending={s.shotPending} />
-              <figcaption className="mt-4 text-sm text-white/45">
+              <div className={c.narrow ? "mx-auto w-full max-w-[280px]" : ""}>
+                <Shot src={c.src} alt={c.alt} pending={s.shotPending} />
+              </div>
+              <figcaption
+                className={
+                  c.narrow
+                    ? "mt-4 text-sm text-white/45 text-center"
+                    : "mt-4 text-sm text-white/45"
+                }
+              >
                 {c.cap}
               </figcaption>
             </figure>
           ))}
         </div>
 
-        {/* Mobil — smal bredde, ellers dominerer portrettformatet (0,45) */}
-        <figure className="m-0 mt-16">
-          <div className="mx-auto w-full max-w-[300px]">
-            <Shot
-              src="/shots/vault-mobile.webp"
-              alt={s.shotMobileAlt}
-              pending={s.shotPending}
-            />
-          </div>
-          <figcaption className="mt-4 text-sm text-white/45 text-center max-w-md mx-auto">
-            {s.shotMobileCaption}
-          </figcaption>
-        </figure>
       </div>
     </section>
   );
