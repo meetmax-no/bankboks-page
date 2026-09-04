@@ -45,6 +45,9 @@ export const STRINGS = {
     archBody:
       "Master-passordet stretches gjennom 600 000 PBKDF2-iterasjoner og brukes til å kryptere hele vault-arrayet som ÉN binær blob. Upstash Redis lagrer kun {salt, iv, cipher}. WebAuthn PRF wrapper master-passordet lokalt for Touch/Face ID-innlogging.",
     archImageAlt: "Ko | Do Vault arkitektur — hybrid mellom ren klient-side og minimal server",
+    blueprintCta: "Les arkitektur-blueprinten →",
+    blueprintNote:
+      "PDF · 9 sider · kryptografisk flyt, edge-arkitektur, RBAC og leverandøruavhengighet.",
     archCaption:
       "Vault-data finnes kun i én form på serveren: kryptert. Ingen hos oss kan lese den. Vercel kan ikke lese den. Upstash kan ikke lese den. Uten din nøkkel er dataene verdiløse.",
 
@@ -229,6 +232,9 @@ export const STRINGS = {
     archBody:
       "Your master password is stretched through 600,000 PBKDF2 iterations and used to encrypt the entire vault array as a single binary blob. Upstash Redis stores only {salt, iv, cipher}. WebAuthn PRF wraps the master password locally for Touch/Face ID login.",
     archImageAlt: "Ko | Do Vault architecture — hybrid between pure client-side and minimal server",
+    blueprintCta: "Read the architectural blueprint →",
+    blueprintNote:
+      "PDF · 9 pages · cryptographic flow, edge architecture, RBAC and vendor independence.",
     archCaption:
       "Vault data exists in only one form on the server: encrypted. No one on our side can read it. Vercel can't read it. Upstash can't read it. Without your key, the data is worthless.",
 

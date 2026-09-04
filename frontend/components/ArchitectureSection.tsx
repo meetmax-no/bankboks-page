@@ -49,6 +49,17 @@ export function ArchitectureSection({ locale }: ArchitectureSectionProps) {
                 </span>
               ))}
             </div>
+
+            <a
+              data-testid="blueprint-link"
+              href="/kodo-vault-blueprint.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 h-11 px-5 rounded-full border border-white/20 text-white/85 hover:text-white hover:bg-white/[0.06] text-sm font-medium transition-all"
+            >
+              {s.blueprintCta}
+            </a>
+            <p className="mt-3 text-xs text-white/35">{s.blueprintNote}</p>
           </div>
 
           <div className="relative">
