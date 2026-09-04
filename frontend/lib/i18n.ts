@@ -101,7 +101,9 @@ export const STRINGS = {
     planYearlyB2: "Angrerett innen 14 dager",
     planYearlyCta: "Velg årlig",
     pricingVat: "Alle priser er oppgitt inkl. mva.",
-    pricingB2bLine: "Bedrift med flere ansatte?",
+    pricingB2bTitle: "Bedrift med flere ansatte?",
+    pricingB2bBody:
+      "Egen bedriftskonsoll, lisenshåndtering og delte mapper. Bedriftsavtaler settes opp manuelt — ta kontakt, så finner vi ut av behovet sammen.",
     pricingB2bCta: "Ta kontakt →",
 
     // Produktbilder (Showcase)
@@ -281,7 +283,9 @@ export const STRINGS = {
     planYearlyB2: "14-day refund window",
     planYearlyCta: "Choose yearly",
     pricingVat: "All prices include VAT.",
-    pricingB2bLine: "A team with several employees?",
+    pricingB2bTitle: "A team with several employees?",
+    pricingB2bBody:
+      "Your own company console, licence management and shared folders. Business agreements are set up manually — get in touch and we will work out what you need.",
     pricingB2bCta: "Get in touch →",
 
     // Showcase

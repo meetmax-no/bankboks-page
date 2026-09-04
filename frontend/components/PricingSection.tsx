@@ -225,15 +225,26 @@ export const PricingSection = forwardRef<HTMLDivElement, PricingSectionProps>(
             {s.pricingVat}
           </p>
 
-          <p className="text-center text-sm text-white/45 mt-4">
-            {s.pricingB2bLine}{" "}
+          {/* B2B — tydelig eget felt, men sekundær stil så det ikke
+              konkurrerer med B2C-knappene over. */}
+          <div className="mt-10 rounded-2xl border border-white/12 bg-white/[0.03] backdrop-blur-xl p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-white mb-1.5">
+                {s.pricingB2bTitle}
+              </h3>
+              <p className="text-sm text-white/55 leading-relaxed">
+                {s.pricingB2bBody}
+              </p>
+            </div>
             <a
-              href="mailto:kontakt@kodovault.no"
-              className="text-white/75 underline underline-offset-2 hover:text-white transition"
+              data-testid="pricing-b2b-cta"
+              href="mailto:kontakt@kodovault.no?subject=Bedrift"
+              className="h-12 px-6 rounded-full border border-white/25 text-white text-sm font-semibold hover:bg-white/[0.08] transition-all flex items-center justify-center gap-2 flex-shrink-0"
             >
               {s.pricingB2bCta}
             </a>
-          </p>
+          </div>
+
         </div>
       </section>
     );
