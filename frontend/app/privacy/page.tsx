@@ -23,9 +23,8 @@ export default function PrivacyPage() {
     >
       <p>
         <strong>In short:</strong> we cannot read the contents of your vault. It is
-        encrypted on your device before it reaches us, and we hold no key. Below is
-        a precise account of what we <em>do</em> process — because it is not
-        nothing.
+        encrypted on your device before it reaches us, and we hold no key. Below is a
+        precise account of what we <em>do</em> process — because it is not nothing.
       </p>
 
       <H2>1. Data controller</H2>
@@ -44,85 +43,135 @@ export default function PrivacyPage() {
           subdomain and language preference.
         </li>
         <li>
-          <strong>Vault contents:</strong> stored only as an encrypted blob. We
-          cannot read passwords, cards, IDs or notes.
+          <strong>Vault contents:</strong> stored only as an encrypted blob. We cannot
+          read passwords, cards, IDs or notes.
         </li>
         <li>
           <strong>Payment:</strong> handled by Stripe. We store a customer ID and
           invoice history, never card numbers.
         </li>
         <li>
+          <strong>Event log:</strong> timestamps for sign-ins, failed attempts and
+          changes to the vault. The log records <em>that</em> something happened,
+          never what the vault contains.
+        </li>
+        <li>
           <strong>Operations and security:</strong> technical logs, including IP
-          address, for a short period. Bot protection via Cloudflare Turnstile.
+          address. Bot protection via Cloudflare Turnstile, which also processes IP
+          addresses.
         </li>
         <li>
           <strong>Usage statistics:</strong> Vercel Analytics on kodovault.no —
-          aggregated page-view statistics, no cookies and no profiling of
-          individuals.
+          aggregated page-view statistics, no cookies and no profiling of individuals.
         </li>
         <li>
           <strong>Mailing list:</strong> your email address, if you sign up.
         </li>
-        <li>
-          <strong>Stored locally on your device:</strong> language preference and
-          any biometric key (WebAuthn) in your browser. This is never sent to us.
-        </li>
       </UL>
 
-      <H2>3. Purpose and legal basis</H2>
+      <H2>3. Stored on your own device</H2>
+      <p>Some things are stored only in your browser and never sent to us:</p>
+      <UL>
+        <li>Your language preference.</li>
+        <li>
+          <strong>Passkey (WebAuthn):</strong> if you enable Touch ID or Face ID, the
+          credential ID, a salt and an encrypted copy of your master password are
+          stored in your browser&rsquo;s local storage. The private key never leaves
+          your device, and we register no passkey on the server. The unlock itself is
+          recorded as an event (see section 2), but the key is not.
+        </li>
+      </UL>
+      <p>
+        This storage is strictly necessary for the service to work as you have
+        requested, and therefore requires no consent under the Norwegian Electronic
+        Communications Act § 3-15. We use no cookies for tracking or marketing.
+      </p>
+
+      <H2>4. Purpose and legal basis</H2>
       <UL>
         <li>Providing the service and managing your subscription — contract, GDPR art. 6(1)(b).</li>
-        <li>Security, operations and abuse prevention — legitimate interest, art. 6(1)(f).</li>
+        <li>Security, operations, event logging and abuse prevention — legitimate interest, art. 6(1)(f).</li>
+        <li>Usage statistics on kodovault.no — legitimate interest, art. 6(1)(f).</li>
         <li>Accounting — legal obligation, art. 6(1)(c).</li>
         <li>Mailing list — consent, art. 6(1)(a). You may withdraw it at any time.</li>
       </UL>
 
-      <H2>4. Processors and where the data sits</H2>
+      <H2>5. Processors</H2>
       <UL>
         <li>
-          <strong>Upstash</strong> — database. Vault data is stored in Frankfurt,
-          with an alternative read path via Dublin. Both in the EU.
+          <strong>Upstash</strong> — database. Vault data is stored in Frankfurt, with
+          an alternative read path via Dublin.
         </li>
         <li>
-          <strong>Vercel</strong> — hosting and operations (Frankfurt and
-          Stockholm).
+          <strong>Vercel</strong> — hosting and operations (Frankfurt and Stockholm).
+          Processes IP addresses in server logs.
         </li>
         <li>
           <strong>Stripe</strong> — payment and invoicing.
         </li>
         <li>
-          <strong>Resend</strong> — sending email.
+          <strong>Resend</strong> — sending email. Processes your email address and the
+          contents of transactional emails (notices and receipts).
         </li>
         <li>
-          <strong>Cloudflare</strong> — bot protection at registration.
+          <strong>Cloudflare</strong> — bot protection at registration. Processes IP
+          addresses.
         </li>
       </UL>
+
+      <H2>6. Transfers to the US — plainly stated</H2>
       <p>
-        <strong>Honest note on transfers to the US:</strong> the vault data itself
-        sits in the EU and is encrypted wherever it is. But Stripe and Resend are
-        US providers, so data such as your email address, name and payment details
-        is processed partly in the US. These transfers rely on the EU Standard
-        Contractual Clauses and the EU–US Data Privacy Framework. We say this
-        plainly rather than writing “everything is in the EU”, because that would
-        not be entirely true.
+        <strong>All five providers above are US companies.</strong> The fact that
+        Upstash stores data in Frankfurt does not change that the company is subject
+        to US law — that is precisely what the Schrems II debate is about. We say so
+        directly rather than claiming “everything is in the EU”.
+      </p>
+      <p>
+        What protects you is not the jurisdiction but the mathematics:{" "}
+        <strong>
+          vault contents are encrypted on your device and are not readable by any of
+          them
+        </strong>
+        . What they can process is metadata — email address, name, IP address and
+        payment details — and this may be processed in the US.
+      </p>
+      <p>
+        Transfers rely on the EU Standard Contractual Clauses (SCC), and for those
+        providers certified under the EU–US Data Privacy Framework, on that framework
+        as well. <strong>A copy of the standard clauses is available on request.</strong>
       </p>
 
-      <H2>5. Retention</H2>
+      <H2>7. Retention</H2>
       <UL>
-        <li>Account data and vault: until you delete your account.</li>
-        <li>Invoices and accounting records: five years, per the Bookkeeping Act.</li>
-        <li>Technical logs: a short period, normally up to 30 days.</li>
-        <li>Mailing list: until you unsubscribe.</li>
+        <li>
+          <strong>Account and vault:</strong> until you delete the account yourself.
+          The vault is also deleted automatically 28 days after it is locked — either
+          because the trial expired or because a payment failed. You are warned by
+          email 7 days in advance.
+        </li>
+        <li>
+          <strong>Stripe customer ID:</strong> until the account is deleted.
+        </li>
+        <li>
+          <strong>Invoices and accounting records:</strong> five years, per the
+          Bookkeeping Act.
+        </li>
+        <li>
+          <strong>Event log and technical logs:</strong> normally up to 30 days.
+        </li>
+        <li>
+          <strong>Mailing list:</strong> until you unsubscribe.
+        </li>
       </UL>
 
-      <H2>6. Deletion</H2>
+      <H2>8. Deletion</H2>
       <p>
         You can permanently delete your vault and account yourself, from settings.
-        Deletion is final. Accounting records are retained as described above
-        because we are legally required to keep them.
+        Deletion is final. Accounting records are retained as described above because
+        we are legally required to keep them.
       </p>
 
-      <H2>7. Your rights</H2>
+      <H2>9. Your rights</H2>
       <p>
         You have the right to access, rectification, erasure, restriction, data
         portability and to object to processing. You can exercise portability
@@ -142,7 +191,7 @@ export default function PrivacyPage() {
         .
       </p>
 
-      <H2>8. Changes</H2>
+      <H2>10. Changes</H2>
       <p>We may update this policy. Material changes are announced by email.</p>
     </LegalLayout>
   );

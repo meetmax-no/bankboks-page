@@ -195,7 +195,7 @@ export const STRINGS = {
     footerLine2: "Arkitektur av Michael Aagreen",
     footerLine3: "Bygget i Norge · Drevet av Upstash i EU · Hosted i EU",
     footerStatus: "Live",
-    footerTerms: "Kjøpsvilkår",
+    footerTerms: "Vilkår",
     footerPrivacy: "Personvern",
 
     // Misc
