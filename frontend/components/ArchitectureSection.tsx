@@ -55,7 +55,12 @@ export function ArchitectureSection({ locale }: ArchitectureSectionProps) {
               href="/kodo-vault-blueprint.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 h-11 px-5 rounded-full border border-white/20 text-white/85 hover:text-white hover:bg-white/[0.06] text-sm font-medium transition-all"
+              className="mt-8 inline-flex items-center gap-2 h-12 px-6 rounded-full text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]"
+              style={{
+                backgroundColor: "var(--accent)",
+                color: "#0a0e1a",
+                boxShadow: "0 8px 24px -8px var(--accent-glow)",
+              }}
             >
               {s.blueprintCta}
             </a>

@@ -60,12 +60,17 @@ export const WaitlistForm = forwardRef<HTMLDivElement, WaitlistFormProps>(
         ref={ref}
         id="waitlist"
         data-testid="waitlist-section"
-        className="relative px-4 sm:px-8 lg:px-16 py-12 border-t border-white/[0.06]"
+        className="relative px-4 sm:px-8 lg:px-16 py-14"
       >
-        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-          <p className="text-sm text-white/50 text-center sm:text-left">
-            {s.waitlistOneLiner}
-          </p>
+        <div className="max-w-5xl mx-auto rounded-2xl border border-white/12 bg-white/[0.03] backdrop-blur-xl p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
+          <div className="flex-1">
+            <h3 className="text-lg font-semibold text-white mb-1.5">
+              {s.waitlistPanelTitle}
+            </h3>
+            <p className="text-sm text-white/55 leading-relaxed">
+              {s.waitlistPanelBody}
+            </p>
+          </div>
 
           {status === "success" ? (
             <p
@@ -79,7 +84,7 @@ export const WaitlistForm = forwardRef<HTMLDivElement, WaitlistFormProps>(
             <form
               onSubmit={handleSubmit}
               data-testid="waitlist-form"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 flex-shrink-0"
               noValidate
             >
               <input

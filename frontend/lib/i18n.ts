@@ -164,6 +164,9 @@ export const STRINGS = {
     waitlistSub:
       "Legg igjen e-posten, så holder jeg deg oppdatert på nytt fra vaulten. Ingen nyhetsbrev. Ingen markedsføring. Ingen oppfølging.",
     waitlistOneLiner: "Ikke klar ennå? Legg igjen e-posten, så sier jeg fra om nytt.",
+    waitlistPanelTitle: "Ikke klar ennå?",
+    waitlistPanelBody:
+      "Legg igjen e-posten, så sier jeg fra når det skjer noe nytt i vaulten. Ingen nyhetsbrev, ingen oppfølging.",
     waitlistEmailPlaceholder: "din@epost.no",
     waitlistButton: "Meld meg på",
     waitlistButtonLoading: "Sender...",
@@ -348,6 +351,9 @@ export const STRINGS = {
     waitlistSub:
       "Leave your email and I'll keep you posted on what's new in the vault. No newsletter. No marketing. No follow-ups.",
     waitlistOneLiner: "Not ready yet? Leave your email and I'll let you know what’s new.",
+    waitlistPanelTitle: "Not ready yet?",
+    waitlistPanelBody:
+      "Leave your email and I'll let you know when something new lands in the vault. No newsletter, no follow-ups.",
     waitlistEmailPlaceholder: "you@email.com",
     waitlistButton: "Sign me up",
     waitlistButtonLoading: "Sending...",
