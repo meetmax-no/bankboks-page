@@ -121,6 +121,9 @@ export const STRINGS = {
     shotLabAlt: "Passord Lab med estimert brute-force-tid",
     shotLabCaption:
       "Passord Lab: test styrke og generer norske passfraser. Alt skjer i nettleseren — ingenting sendes til server.",
+    shotMobileAlt: "Ko | Do Vault åpnet i mobilnettleser med egen bunnmeny",
+    shotMobileCaption:
+      "Samme vault på telefonen, med egen meny tilpasset skjermen. Ingen app å installere — bare nettleseren, adressen og master-passordet.",
     shotBackupAlt: "Backup og eksport — kryptert backup, CSV-eksport og permanent sletting",
     shotBackupCaption:
       "Ta med deg alt når du vil: kryptert backup eller Bitwarden-kompatibel CSV. Og du kan slette alt permanent.",
@@ -290,6 +293,9 @@ export const STRINGS = {
     shotLabAlt: "Password Lab showing estimated brute-force time",
     shotLabCaption:
       "Password Lab: test strength and generate Norwegian passphrases. Everything happens in your browser.",
+    shotMobileAlt: "Ko | Do Vault opened in a mobile browser with its own bottom menu",
+    shotMobileCaption:
+      "The same vault on your phone, with its own menu sized for the screen. No app to install — just the browser, the address and your master password.",
     shotBackupAlt: "Backup and export — encrypted backup, CSV export and permanent deletion",
     shotBackupCaption:
       "Take everything with you whenever: encrypted backup or Bitwarden-compatible CSV. And you can delete it all permanently.",

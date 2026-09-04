@@ -119,6 +119,20 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
             </figure>
           ))}
         </div>
+
+        {/* Mobil — smal bredde, ellers dominerer portrettformatet (0,45) */}
+        <figure className="m-0 mt-16">
+          <div className="mx-auto w-full max-w-[300px]">
+            <Shot
+              src="/shots/vault-mobile.webp"
+              alt={s.shotMobileAlt}
+              pending={s.shotPending}
+            />
+          </div>
+          <figcaption className="mt-4 text-sm text-white/45 text-center max-w-md mx-auto">
+            {s.shotMobileCaption}
+          </figcaption>
+        </figure>
       </div>
     </section>
   );
