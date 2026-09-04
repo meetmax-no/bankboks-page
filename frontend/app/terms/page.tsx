@@ -29,7 +29,7 @@ export default function TermsPage() {
       <H2>1. Seller</H2>
       <p>
         Ko | Do · Vault is provided by <strong>Me &amp; Max AS</strong>, company no.
-        987 607 882 MVA, Oslo, Norway. Contact:{" "}
+        987 607 882 MVA, Stigerbakken 7, 1348 Rykkinn, Norway. Contact:{" "}
         <a className="underline underline-offset-2 hover:text-white" href="mailto:kontakt@kodovault.no">
           kontakt@kodovault.no
         </a>

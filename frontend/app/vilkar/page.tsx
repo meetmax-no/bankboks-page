@@ -23,7 +23,7 @@ export default function VilkarPage() {
       <H2>1. Selger</H2>
       <p>
         Ko | Do · Vault leveres av <strong>Me &amp; Max AS</strong>, org.nr
-        987 607 882 MVA, Oslo, Norge. Kontakt:{" "}
+        987 607 882 MVA, Stigerbakken 7, 1348 Rykkinn, Norge. Kontakt:{" "}
         <a className="underline underline-offset-2 hover:text-white" href="mailto:kontakt@kodovault.no">
           kontakt@kodovault.no
         </a>

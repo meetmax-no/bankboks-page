@@ -29,7 +29,7 @@ export default function PrivacyPage() {
 
       <H2>1. Data controller</H2>
       <p>
-        Me &amp; Max AS, company no. 987 607 882 MVA, Oslo, Norway. Contact:{" "}
+        Me &amp; Max AS, company no. 987 607 882 MVA, Stigerbakken 7, 1348 Rykkinn, Norway. Contact:{" "}
         <a className="underline underline-offset-2 hover:text-white" href="mailto:kontakt@kodovault.no">
           kontakt@kodovault.no
         </a>
