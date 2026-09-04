@@ -79,7 +79,7 @@ export default function TermsPage() {
       <UL>
         <li>We notify you by email 5 days before the trial expires.</li>
         <li>If you choose no paid plan, the vault is locked on expiry. A locked vault cannot be used — you can neither read nor change its contents.</li>
-        <li>You may still retrieve your data throughout the 28-day period, at no cost. See section 10.</li>
+        <li>You may still export your data throughout the 28-day period, at no cost. See section 10.</li>
         <li>The data is kept for 28 days after locking. You receive an email warning 7 days before deletion.</li>
         <li>After 28 days the data is permanently deleted. If you upgrade within the deadline, the vault reopens with its contents intact.</li>
       </UL>
@@ -139,14 +139,10 @@ export default function TermsPage() {
       </p>
       <p>
         <strong>This applies to a locked vault as well.</strong> Throughout the 28-day
-        period before deletion you have the right to retrieve your data at no cost —
-        either directly in the app, or by asking us for the encrypted file at{" "}
-        <a className="underline underline-offset-2 hover:text-white" href="mailto:kontakt@kodovault.no">
-          kontakt@kodovault.no
-        </a>
-        . It is your data. The fact that we cannot read it is no reason for us to
-        withhold it — decryption happens locally on your device with your master
-        password either way.
+        period before deletion you can export your data, at no cost. It is your data.
+        The fact that we cannot read it is no reason for us to withhold it —
+        decryption happens locally on your device with your master password either
+        way.
       </p>
       <p>
         You may also permanently delete your vault and account from settings. Deletion

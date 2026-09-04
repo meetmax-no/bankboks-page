@@ -150,7 +150,7 @@ export default function PrivacyPage() {
           or 28 days after the vault was locked — whichever comes first. The vault is
           locked when the trial expires or a payment fails, and is deleted
           automatically 28 days later. You are warned by email 7 days before deletion,
-          and you may retrieve your data throughout that period (see section 10 of the{" "}
+          and you may export your data throughout that period (see section 10 of the{" "}
           <a className="underline underline-offset-2 hover:text-white" href="/terms">
             terms
           </a>

@@ -73,7 +73,7 @@ export default function VilkarPage() {
       <UL>
         <li>Vi varsler deg på e-post 5 dager før prøveperioden utløper.</li>
         <li>Velger du ingen betalt plan, låses vaulten ved utløp. En låst vault kan ikke brukes — du kan verken lese eller endre innholdet.</li>
-        <li>Du kan likevel få ut dataene dine i hele 28-dagersperioden, uten å betale. Se punkt 10.</li>
+        <li>Du kan likevel eksportere dataene dine i hele 28-dagersperioden, uten å betale. Se punkt 10.</li>
         <li>Dataene beholdes i 28 dager etter låsing. Du får varsel på e-post 7 dager før sletting.</li>
         <li>Etter 28 dager slettes dataene permanent. Oppgraderer du innen fristen, gjenåpnes vaulten med innholdet i behold.</li>
       </UL>
@@ -132,12 +132,8 @@ export default function VilkarPage() {
       </p>
       <p>
         <strong>Dette gjelder også når vaulten er låst.</strong> I hele
-        28-dagersperioden før sletting har du rett til å få ut dataene dine uten å
-        betale — enten direkte i appen, eller ved å be oss om den krypterte fila på{" "}
-        <a className="underline underline-offset-2 hover:text-white" href="mailto:kontakt@kodovault.no">
-          kontakt@kodovault.no
-        </a>
-        . Det er dine data. At vi ikke kan lese dem, betyr ikke at vi skal holde dem
+        28-dagersperioden før sletting kan du eksportere dataene dine, uten å betale.
+        Det er dine data. At vi ikke kan lese dem, betyr ikke at vi skal holde dem
         tilbake — dekrypteringen skjer uansett lokalt på din enhet, med
         master-passordet ditt.
       </p>

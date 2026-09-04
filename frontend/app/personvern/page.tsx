@@ -147,7 +147,7 @@ export default function PersonvernPage() {
           28 dager etter at vaulten ble låst — det som inntreffer først. Vaulten låses
           når prøveperioden utløper eller en betaling ikke går gjennom, og slettes
           automatisk 28 dager senere. Du varsles på e-post 7 dager før sletting, og du
-          kan hente ut dataene dine i hele perioden (se punkt 10 i{" "}
+          kan eksportere dataene dine i hele perioden (se punkt 10 i{" "}
           <a className="underline underline-offset-2 hover:text-white" href="/vilkar">
             vilkårene
           </a>
