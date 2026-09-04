@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { STRINGS, type Locale } from "@/lib/i18n";
 
 interface FooterProps {
@@ -22,6 +23,21 @@ export function Footer({ locale }: FooterProps) {
           </div>
           <div className="text-xs text-white/55">{s.footerLine2}</div>
           <div className="text-[11px] text-white/40">{s.footerLine3}</div>
+          <div className="flex items-center gap-3 pt-1 justify-center sm:justify-start">
+            <Link
+              href="/vilkar"
+              className="text-[11px] text-white/45 hover:text-white/80 underline underline-offset-2 transition"
+            >
+              {s.footerTerms}
+            </Link>
+            <span className="text-white/20 text-[11px]">·</span>
+            <Link
+              href="/personvern"
+              className="text-[11px] text-white/45 hover:text-white/80 underline underline-offset-2 transition"
+            >
+              {s.footerPrivacy}
+            </Link>
+          </div>
         </div>
 
         <div className="flex items-center gap-3 text-[11px] font-mono text-white/40">
