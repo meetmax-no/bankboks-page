@@ -72,7 +72,7 @@ export default function VilkarPage() {
       </p>
       <UL>
         <li>Vi varsler deg på e-post 5 dager før prøveperioden utløper.</li>
-        <li>Velger du ingen betalt plan, låses vaulten ved utløp. En låst vault kan ikke brukes — du kan verken lese eller endre innholdet.</li>
+        <li>Velger du ingen betalt plan, låses vaulten ved utløp. En låst vault kan ikke brukes — du kan verken slå opp eller endre innholdet.</li>
         <li>Du kan likevel eksportere dataene dine i hele 28-dagersperioden, uten å betale. Se punkt 10.</li>
         <li>Dataene beholdes i 28 dager etter låsing. Du får varsel på e-post 7 dager før sletting.</li>
         <li>Etter 28 dager slettes dataene permanent. Oppgraderer du innen fristen, gjenåpnes vaulten med innholdet i behold.</li>

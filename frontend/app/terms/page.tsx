@@ -78,7 +78,7 @@ export default function TermsPage() {
       </p>
       <UL>
         <li>We notify you by email 5 days before the trial expires.</li>
-        <li>If you choose no paid plan, the vault is locked on expiry. A locked vault cannot be used — you can neither read nor change its contents.</li>
+        <li>If you choose no paid plan, the vault is locked on expiry. A locked vault cannot be used — you can neither look up nor change its contents.</li>
         <li>You may still export your data throughout the 28-day period, at no cost. See section 10.</li>
         <li>The data is kept for 28 days after locking. You receive an email warning 7 days before deletion.</li>
         <li>After 28 days the data is permanently deleted. If you upgrade within the deadline, the vault reopens with its contents intact.</li>
