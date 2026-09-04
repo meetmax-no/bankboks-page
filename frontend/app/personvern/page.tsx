@@ -73,8 +73,8 @@ export default function PersonvernPage() {
       <H2>4. Databehandlere og hvor dataene ligger</H2>
       <UL>
         <li>
-          <strong>Upstash</strong> — database. Vault-data lagres i EU (Frankfurt
-          og Dublin).
+          <strong>Upstash</strong> — database. Vault-data lagres i Frankfurt, med
+          en alternativ lesevei via Dublin. Begge i EU.
         </li>
         <li>
           <strong>Vercel</strong> — hosting og drift (Frankfurt og Stockholm).

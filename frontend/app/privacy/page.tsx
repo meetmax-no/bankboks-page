@@ -80,8 +80,8 @@ export default function PrivacyPage() {
       <H2>4. Processors and where the data sits</H2>
       <UL>
         <li>
-          <strong>Upstash</strong> — database. Vault data is stored in the EU
-          (Frankfurt and Dublin).
+          <strong>Upstash</strong> — database. Vault data is stored in Frankfurt,
+          with an alternative read path via Dublin. Both in the EU.
         </li>
         <li>
           <strong>Vercel</strong> — hosting and operations (Frankfurt and
