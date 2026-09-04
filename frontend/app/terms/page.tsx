@@ -139,10 +139,7 @@ export default function TermsPage() {
       </p>
       <p>
         <strong>This applies to a locked vault as well.</strong> Throughout the 28-day
-        period before deletion you can export your data, at no cost. It is your data.
-        The fact that we cannot read it is no reason for us to withhold it —
-        decryption happens locally on your device with your master password either
-        way.
+        period before deletion you can export your data, at no cost.
       </p>
       <p>
         You may also permanently delete your vault and account from settings. Deletion

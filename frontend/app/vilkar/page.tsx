@@ -133,9 +133,6 @@ export default function VilkarPage() {
       <p>
         <strong>Dette gjelder også når vaulten er låst.</strong> I hele
         28-dagersperioden før sletting kan du eksportere dataene dine, uten å betale.
-        Det er dine data. At vi ikke kan lese dem, betyr ikke at vi skal holde dem
-        tilbake — dekrypteringen skjer uansett lokalt på din enhet, med
-        master-passordet ditt.
       </p>
       <p>
         Du kan også slette vaulten og kontoen din permanent fra innstillingene.
