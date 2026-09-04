@@ -115,6 +115,9 @@ export const STRINGS = {
     shotDashAlt: "Oversikt over passord gruppert i kategorier",
     shotDashCaption:
       "Passord, kort og ID-er gruppert og søkbare. Dekryptert lokalt, kun mens vaulten er åpen.",
+    shotCardAlt: "Kort i vaulten med maskert nummer, CVV, PIN og tap-kort-telefon",
+    shotCardCaption:
+      "Et kort i vaulten: nummer, CVV og PIN er maskert til du trykker — og tap-kort-telefonen ligger der når lommeboka er borte i utlandet.",
     shotMasterAlt: "Opprett master-passord — advarsel om at data ikke kan gjenopprettes",
     shotMasterCaption:
       "Ved oppsett: ingen «glemt passord». Du bekrefter selv at dataene er tapt hvis master-passordet mistes.",
@@ -287,6 +290,9 @@ export const STRINGS = {
     shotDashAlt: "Overview of passwords grouped by category",
     shotDashCaption:
       "Passwords, cards and IDs grouped and searchable. Decrypted locally, only while the vault is open.",
+    shotCardAlt: "A card in the vault with masked number, CVV, PIN and lost-card phone number",
+    shotCardCaption:
+      "A card in the vault: number, CVV and PIN stay masked until you tap — and the lost-card hotline is right there when your wallet is gone abroad.",
     shotMasterAlt: "Create master password — warning that data cannot be recovered",
     shotMasterCaption:
       "At setup: no \u00abforgot password\u00bb. You confirm yourself that the data is lost if the master password is.",

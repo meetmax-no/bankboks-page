@@ -71,6 +71,7 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
 
   const cards = [
     { src: "/shots/vault-dashboard.webp", alt: s.shotDashAlt, cap: s.shotDashCaption },
+    { src: "/shots/card-detail.webp", alt: s.shotCardAlt, cap: s.shotCardCaption },
     { src: "/shots/master-password.webp", alt: s.shotMasterAlt, cap: s.shotMasterCaption },
     { src: "/shots/password-lab.png", alt: s.shotLabAlt, cap: s.shotLabCaption },
     { src: "/shots/backup.png", alt: s.shotBackupAlt, cap: s.shotBackupCaption },
