@@ -4,10 +4,12 @@ import type { ReactNode } from "react";
 export function LegalLayout({
   title,
   updated,
+  note,
   children,
 }: {
   title: string;
   updated: string;
+  note: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -33,7 +35,7 @@ export function LegalLayout({
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/[0.08] text-xs text-white/35">
-          Denne siden finnes kun på norsk. The Norwegian text governs.
+          {note}
         </div>
       </div>
     </div>

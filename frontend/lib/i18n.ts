@@ -143,7 +143,7 @@ export const STRINGS = {
       "Nei. Alle data håndteres og krypteres i nettleseren din. Når data forlater din nettleser er de kryptert.",
     faqQ3: "Hvor lagres dataene?",
     faqA3:
-      "I EU (Frankfurt + Stockholm). Schrems II-kompatibelt, bygget i Norge.",
+      "I EU (Frankfurt + Dublin). Schrems II-kompatibelt, bygget i Norge.",
     faqQ4: "Hva skjer hvis Ko | Do legges ned?",
     faqA4:
       "Du eksporterer alt. Filformatet er dokumentert og kan dekrypteres uten oss vha annen teknisk bistand.",
@@ -321,7 +321,7 @@ export const STRINGS = {
       "No. All data is handled and encrypted in your browser. When data leaves your browser, it is encrypted.",
     faqQ3: "Where is the data stored?",
     faqA3:
-      "In the EU (Frankfurt + Stockholm). Schrems II-compliant, built in Norway.",
+      "In the EU (Frankfurt + Dublin). Schrems II-compliant, built in Norway.",
     faqQ4: "What happens if Ko | Do shuts down?",
     faqA4:
       "You export everything. The file format is documented and can be decrypted without us, with other technical assistance.",

@@ -10,6 +10,8 @@ interface FooterProps {
 export function Footer({ locale }: FooterProps) {
   const s = STRINGS[locale];
   const year = new Date().getFullYear();
+  const termsHref = locale === "en" ? "/terms" : "/vilkar";
+  const privacyHref = locale === "en" ? "/privacy" : "/personvern";
 
   return (
     <footer
@@ -25,14 +27,14 @@ export function Footer({ locale }: FooterProps) {
           <div className="text-[11px] text-white/40">{s.footerLine3}</div>
           <div className="flex items-center gap-3 pt-1 justify-center sm:justify-start">
             <Link
-              href="/vilkar"
+              href={termsHref}
               className="text-[11px] text-white/45 hover:text-white/80 underline underline-offset-2 transition"
             >
               {s.footerTerms}
             </Link>
             <span className="text-white/20 text-[11px]">·</span>
             <Link
-              href="/personvern"
+              href={privacyHref}
               className="text-[11px] text-white/45 hover:text-white/80 underline underline-offset-2 transition"
             >
               {s.footerPrivacy}

@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 
 export default function VilkarPage() {
   return (
-    <LegalLayout title="Kjøpsvilkår" updated="Sist oppdatert 4. september 2026">
+    <LegalLayout title="Kjøpsvilkår" updated="Sist oppdatert 4. september 2026"
+      note={<>Norsk versjon gjelder. <a className="underline underline-offset-2 hover:text-white" href="/terms">English version →</a></>}>
       <p>
         Disse vilkårene gjelder for kjøp og bruk av Ko | Do · Vault. Ved å
         opprette en vault aksepterer du vilkårene.

@@ -12,6 +12,7 @@ export default function PersonvernPage() {
     <LegalLayout
       title="Personvernerklæring"
       updated="Sist oppdatert 4. september 2026"
+      note={<>Norsk versjon gjelder. <a className="underline underline-offset-2 hover:text-white" href="/privacy">English version →</a></>}
     >
       <p>
         <strong>Kort fortalt:</strong> vi kan ikke lese innholdet i vaulten din.
@@ -73,10 +74,10 @@ export default function PersonvernPage() {
       <UL>
         <li>
           <strong>Upstash</strong> — database. Vault-data lagres i EU (Frankfurt
-          og Stockholm).
+          og Dublin).
         </li>
         <li>
-          <strong>Vercel</strong> — hosting og drift.
+          <strong>Vercel</strong> — hosting og drift (Frankfurt og Stockholm).
         </li>
         <li>
           <strong>Stripe</strong> — betaling og fakturering.
