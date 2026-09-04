@@ -109,9 +109,12 @@ export const STRINGS = {
     showcaseSub:
       "Vaulten kjører i nettleseren — på maskinen, på mobilen, på en lånt telefon i utlandet. Ingenting å installere.",
     shotPending: "Skjermbilde kommer",
-    shotVaultAlt: "Ko | Do Vault — oversikt over passord, kort og ID-er",
-    shotVaultCaption:
-      "Passord, kort og ID-er samlet ett sted — kryptert i nettleseren din før noe forlater enheten.",
+    shotLockAlt: "Ko | Do Vault låseskjerm i nettleseren, med Touch ID og master-passord",
+    shotLockCaption:
+      "Slik møter den deg: låst, i nettleseren. Touch ID eller master-passord — og en ærlig beskjed om at vaulten ikke kan gjenopprettes.",
+    shotDashAlt: "Oversikt over passord gruppert i kategorier",
+    shotDashCaption:
+      "Passord, kort og ID-er gruppert og søkbare. Dekryptert lokalt, kun mens vaulten er åpen.",
     shotMasterAlt: "Opprett master-passord — advarsel om at data ikke kan gjenopprettes",
     shotMasterCaption:
       "Ved oppsett: ingen «glemt passord». Du bekrefter selv at dataene er tapt hvis master-passordet mistes.",
@@ -275,9 +278,12 @@ export const STRINGS = {
     showcaseSub:
       "The vault runs in your browser — on your computer, your phone, or a borrowed phone abroad. Nothing to install.",
     shotPending: "Screenshot coming",
-    shotVaultAlt: "Ko | Do Vault — overview of passwords, cards and IDs",
-    shotVaultCaption:
-      "Passwords, cards and IDs in one place — encrypted in your browser before anything leaves the device.",
+    shotLockAlt: "Ko | Do Vault lock screen in the browser, with Touch ID and master password",
+    shotLockCaption:
+      "How it meets you: locked, in the browser. Touch ID or master password — and an honest note that the vault cannot be recovered.",
+    shotDashAlt: "Overview of passwords grouped by category",
+    shotDashCaption:
+      "Passwords, cards and IDs grouped and searchable. Decrypted locally, only while the vault is open.",
     shotMasterAlt: "Create master password — warning that data cannot be recovered",
     shotMasterCaption:
       "At setup: no \u00abforgot password\u00bb. You confirm yourself that the data is lost if the master password is.",

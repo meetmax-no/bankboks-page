@@ -8,82 +8,48 @@ interface ShowcaseSectionProps {
 }
 
 /**
- * Produktbilder. Filene legges i /public/shots/ — inntil de finnes vises
- * en pen plassholder i stedet for et ødelagt bilde, så siden aldri ser
- * knekt ut. Legg inn PNG-ene med disse navnene, så tar rammene resten:
+ * Produktbilder. Rammene er bevisst nøytrale og bruker bildets NATURLIGE
+ * høyde — skjermbildene spriker fra 0,56 til 2,2 i format, og enhver fast
+ * aspect-ratio ville enten beskåret dem eller gitt store tomrom.
  *
- *   /shots/vault.png         landskap  (nettleser-ramme)  ~1440x900
- *   /shots/master-password.webp  4:5  (app-ramme)
- *   /shots/password-lab.png      4:5  (app-ramme)
+ * vault-lock.webp har allerede ekte nettleser-ramme i selve bildet, så den
+ * får ingen påtegnet ramme (ellers blir det to adressefelt).
+ *
+ * Mangler en fil, vises en diskré plassholder i stedet for et brukket bilde.
  */
 
 function Pending({ label }: { label: string }) {
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
-      <span className="text-[11px] uppercase tracking-[0.18em] text-white/25 font-mono">
-        {label}
-      </span>
-    </div>
-  );
-}
-
-function BrowserShot({
-  src,
-  alt,
-  pending,
-}: {
-  src: string;
-  alt: string;
-  pending: string;
-}) {
-  const [ok, setOk] = useState(true);
-  return (
-    <div
-      className="rounded-2xl overflow-hidden border border-white/12 bg-white/[0.03] backdrop-blur-xl"
-      style={{ boxShadow: "0 30px 80px -30px rgba(0,0,0,.65)" }}
-    >
-      {/* nettleser-topplinje — beviser «kjører i nettleseren» uten å si det */}
-      <div className="flex items-center gap-2 px-4 h-10 border-b border-white/[0.08] bg-white/[0.02]">
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <div className="ml-3 flex-1 max-w-xs h-5 rounded-full bg-white/[0.05] flex items-center px-3">
-          <span className="text-[10px] text-white/35 font-mono truncate">
-            kodovault.no
-          </span>
-        </div>
-      </div>
-      <div className="relative bg-black/40" style={{ aspectRatio: "16 / 10" }}>
-        {ok ? (
-          <img
-            src={src}
-            alt={alt}
-            loading="lazy"
-            onError={() => setOk(false)}
-            className="absolute inset-0 h-full w-full object-cover object-top"
-          />
-        ) : (
-          <Pending label={pending} />
-        )}
+    <div className="relative" style={{ aspectRatio: "4 / 5" }}>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <span className="text-[11px] uppercase tracking-[0.18em] text-white/25 font-mono">
+          {label}
+        </span>
       </div>
     </div>
   );
 }
 
-function AppShot({
+function Shot({
   src,
   alt,
   pending,
+  bare = false,
 }: {
   src: string;
   alt: string;
   pending: string;
+  bare?: boolean;
 }) {
   const [ok, setOk] = useState(true);
   return (
     <div
-      className="rounded-2xl overflow-hidden border border-white/12 bg-black/40 backdrop-blur-xl"
-      style={{ boxShadow: "0 30px 70px -25px rgba(0,0,0,.7)" }}
+      className={
+        bare
+          ? "rounded-2xl overflow-hidden"
+          : "rounded-2xl overflow-hidden border border-white/12 bg-black/40 backdrop-blur-xl"
+      }
+      style={{ boxShadow: "0 30px 80px -28px rgba(0,0,0,.75)" }}
     >
       {ok ? (
         <img
@@ -94,9 +60,7 @@ function AppShot({
           className="block w-full h-auto"
         />
       ) : (
-        <div className="relative" style={{ aspectRatio: "4 / 5" }}>
-          <Pending label={pending} />
-        </div>
+        <Pending label={pending} />
       )}
     </div>
   );
@@ -104,6 +68,13 @@ function AppShot({
 
 export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
   const s = STRINGS[locale];
+
+  const cards = [
+    { src: "/shots/vault-dashboard.webp", alt: s.shotDashAlt, cap: s.shotDashCaption },
+    { src: "/shots/master-password.webp", alt: s.shotMasterAlt, cap: s.shotMasterCaption },
+    { src: "/shots/password-lab.png", alt: s.shotLabAlt, cap: s.shotLabCaption },
+    { src: "/shots/backup.png", alt: s.shotBackupAlt, cap: s.shotBackupCaption },
+  ];
 
   return (
     <section
@@ -125,50 +96,28 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
           </p>
         </div>
 
+        {/* Hero: låseskjermen — ekte nettleser-ramme ligger i bildet */}
         <figure className="m-0">
-          <BrowserShot
-            src="/shots/vault.png"
-            alt={s.shotVaultAlt}
+          <Shot
+            src="/shots/vault-lock.webp"
+            alt={s.shotLockAlt}
             pending={s.shotPending}
+            bare
           />
           <figcaption className="mt-4 text-sm text-white/45">
-            {s.shotVaultCaption}
+            {s.shotLockCaption}
           </figcaption>
         </figure>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 mt-14 items-start">
-          <figure className="m-0">
-            <AppShot
-              src="/shots/master-password.webp"
-              alt={s.shotMasterAlt}
-              pending={s.shotPending}
-            />
-            <figcaption className="mt-4 text-sm text-white/45 text-center">
-              {s.shotMasterCaption}
-            </figcaption>
-          </figure>
-
-          <figure className="m-0">
-            <AppShot
-              src="/shots/password-lab.png"
-              alt={s.shotLabAlt}
-              pending={s.shotPending}
-            />
-            <figcaption className="mt-4 text-sm text-white/45 text-center">
-              {s.shotLabCaption}
-            </figcaption>
-          </figure>
-
-          <figure className="m-0">
-            <AppShot
-              src="/shots/backup.png"
-              alt={s.shotBackupAlt}
-              pending={s.shotPending}
-            />
-            <figcaption className="mt-4 text-sm text-white/45 text-center">
-              {s.shotBackupCaption}
-            </figcaption>
-          </figure>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mt-16 items-start">
+          {cards.map((c) => (
+            <figure key={c.src} className="m-0">
+              <Shot src={c.src} alt={c.alt} pending={s.shotPending} />
+              <figcaption className="mt-4 text-sm text-white/45">
+                {c.cap}
+              </figcaption>
+            </figure>
+          ))}
         </div>
       </div>
     </section>
