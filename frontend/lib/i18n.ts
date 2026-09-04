@@ -112,12 +112,12 @@ export const STRINGS = {
     shotVaultAlt: "Ko | Do Vault — oversikt over passord, kort og ID-er",
     shotVaultCaption:
       "Passord, kort og ID-er samlet ett sted — kryptert i nettleseren din før noe forlater enheten.",
-    shotCameraAlt: "Kamerafangst av kort direkte i vaulten",
-    shotCameraCaption:
-      "Kameraet går rett i vaulten. Bildet rører aldri telefonens bildegalleri eller iCloud.",
+    shotMasterAlt: "Opprett master-passord — advarsel om at data ikke kan gjenopprettes",
+    shotMasterCaption:
+      "Ved oppsett: ingen «glemt passord». Du bekrefter selv at dataene er tapt hvis master-passordet mistes.",
     shotLabAlt: "Passord Lab med estimert brute-force-tid",
     shotLabCaption:
-      "Passord Lab viser reell brute-force-tid — regnet på 600 000 PBKDF2-iterasjoner.",
+      "Passord Lab: test styrke og generer norske passfraser. Alt skjer i nettleseren — ingenting sendes til server.",
 
     // FAQ
     faqEyebrow: "Spørsmål og svar",
@@ -275,12 +275,12 @@ export const STRINGS = {
     shotVaultAlt: "Ko | Do Vault — overview of passwords, cards and IDs",
     shotVaultCaption:
       "Passwords, cards and IDs in one place — encrypted in your browser before anything leaves the device.",
-    shotCameraAlt: "Camera capture of a card straight into the vault",
-    shotCameraCaption:
-      "The camera feeds straight into the vault. The image never touches your photo gallery or iCloud.",
+    shotMasterAlt: "Create master password — warning that data cannot be recovered",
+    shotMasterCaption:
+      "At setup: no \u00abforgot password\u00bb. You confirm yourself that the data is lost if the master password is.",
     shotLabAlt: "Password Lab showing estimated brute-force time",
     shotLabCaption:
-      "Password Lab shows real brute-force time — calculated on 600,000 PBKDF2 iterations.",
+      "Password Lab: test strength and generate Norwegian passphrases. Everything happens in your browser.",
 
     // FAQ
     faqEyebrow: "Questions and answers",

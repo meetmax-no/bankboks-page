@@ -13,8 +13,8 @@ interface ShowcaseSectionProps {
  * knekt ut. Legg inn PNG-ene med disse navnene, så tar rammene resten:
  *
  *   /shots/vault.png         landskap  (nettleser-ramme)  ~1440x900
- *   /shots/camera.png        portrett  (telefon-ramme)    ~1179x2556
- *   /shots/password-lab.png  portrett  (telefon-ramme)    ~1179x2556
+ *   /shots/master-password.webp  4:5  (app-ramme)
+ *   /shots/password-lab.png      4:5  (app-ramme)
  */
 
 function Pending({ label }: { label: string }) {
@@ -70,7 +70,7 @@ function BrowserShot({
   );
 }
 
-function PhoneShot({
+function AppShot({
   src,
   alt,
   pending,
@@ -82,22 +82,17 @@ function PhoneShot({
   const [ok, setOk] = useState(true);
   return (
     <div
-      className="mx-auto w-full max-w-[230px] rounded-[2.2rem] border border-white/15 bg-white/[0.03] p-2 backdrop-blur-xl"
+      className="rounded-2xl overflow-hidden border border-white/12 bg-black/40 backdrop-blur-xl"
       style={{ boxShadow: "0 30px 70px -25px rgba(0,0,0,.7)" }}
     >
-      <div
-        className="relative rounded-[1.7rem] overflow-hidden bg-black/50"
-        style={{ aspectRatio: "393 / 852" }}
-      >
-        {/* dynamic island */}
-        <div className="absolute top-2.5 left-1/2 -translate-x-1/2 z-10 h-4 w-16 rounded-full bg-black/80" />
+      <div className="relative" style={{ aspectRatio: "4 / 5" }}>
         {ok ? (
           <img
             src={src}
             alt={alt}
             loading="lazy"
             onError={() => setOk(false)}
-            className="absolute inset-0 h-full w-full object-cover object-top"
+            className="absolute inset-0 h-full w-full object-contain"
           />
         ) : (
           <Pending label={pending} />
@@ -143,18 +138,18 @@ export function ShowcaseSection({ locale }: ShowcaseSectionProps) {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 mt-14">
           <figure className="m-0">
-            <PhoneShot
-              src="/shots/camera.png"
-              alt={s.shotCameraAlt}
+            <AppShot
+              src="/shots/master-password.webp"
+              alt={s.shotMasterAlt}
               pending={s.shotPending}
             />
             <figcaption className="mt-4 text-sm text-white/45 text-center">
-              {s.shotCameraCaption}
+              {s.shotMasterCaption}
             </figcaption>
           </figure>
 
           <figure className="m-0">
-            <PhoneShot
+            <AppShot
               src="/shots/password-lab.png"
               alt={s.shotLabAlt}
               pending={s.shotPending}
