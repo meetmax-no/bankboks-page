@@ -5,6 +5,7 @@ import Image from "next/image";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { HeroSection } from "@/components/HeroSection";
 import { ProblemSection } from "@/components/ProblemSection";
+import { ShowcaseSection } from "@/components/ShowcaseSection";
 import { ArchitectureSection } from "@/components/ArchitectureSection";
 import { NorthStarSection } from "@/components/NorthStarSection";
 import { RoadmapSection } from "@/components/RoadmapSection";
@@ -110,6 +111,7 @@ export default function LandingPage() {
       <main className="relative z-10">
         <HeroSection locale={locale} onCtaClick={scrollToPricing} />
         <ProblemSection locale={locale} />
+        <ShowcaseSection locale={locale} />
         <ArchitectureSection locale={locale} />
         <NorthStarSection locale={locale} />
         <RoadmapSection locale={locale} />

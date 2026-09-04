@@ -103,6 +103,22 @@ export const STRINGS = {
     pricingB2bLine: "Bedrift med flere ansatte?",
     pricingB2bCta: "Ta kontakt →",
 
+    // Produktbilder (Showcase)
+    showcaseEyebrow: "Slik ser det ut",
+    showcaseTitle: "Ikke en beskrivelse. Produktet.",
+    showcaseSub:
+      "Vaulten kjører i nettleseren — på maskinen, på mobilen, på en lånt telefon i utlandet. Ingenting å installere.",
+    shotPending: "Skjermbilde kommer",
+    shotVaultAlt: "Ko | Do Vault — oversikt over passord, kort og ID-er",
+    shotVaultCaption:
+      "Passord, kort og ID-er samlet ett sted — kryptert i nettleseren din før noe forlater enheten.",
+    shotCameraAlt: "Kamerafangst av kort direkte i vaulten",
+    shotCameraCaption:
+      "Kameraet går rett i vaulten. Bildet rører aldri telefonens bildegalleri eller iCloud.",
+    shotLabAlt: "Passord Lab med estimert brute-force-tid",
+    shotLabCaption:
+      "Passord Lab viser reell brute-force-tid — regnet på 600 000 PBKDF2-iterasjoner.",
+
     // FAQ
     faqEyebrow: "Spørsmål og svar",
     faqTitle: "Det du lurer på.",
@@ -249,6 +265,22 @@ export const STRINGS = {
     planYearlyCta: "Choose yearly",
     pricingB2bLine: "A team with several employees?",
     pricingB2bCta: "Get in touch →",
+
+    // Showcase
+    showcaseEyebrow: "What it looks like",
+    showcaseTitle: "Not a description. The product.",
+    showcaseSub:
+      "The vault runs in your browser — on your computer, your phone, or a borrowed phone abroad. Nothing to install.",
+    shotPending: "Screenshot coming",
+    shotVaultAlt: "Ko | Do Vault — overview of passwords, cards and IDs",
+    shotVaultCaption:
+      "Passwords, cards and IDs in one place — encrypted in your browser before anything leaves the device.",
+    shotCameraAlt: "Camera capture of a card straight into the vault",
+    shotCameraCaption:
+      "The camera feeds straight into the vault. The image never touches your photo gallery or iCloud.",
+    shotLabAlt: "Password Lab showing estimated brute-force time",
+    shotLabCaption:
+      "Password Lab shows real brute-force time — calculated on 600,000 PBKDF2 iterations.",
 
     // FAQ
     faqEyebrow: "Questions and answers",
